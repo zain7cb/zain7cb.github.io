@@ -1,0 +1,90 @@
+% Document class and font size
+\documentclass[a4paper,11pt]{extarticle}
+
+% Packages
+\usepackage[utf8]{inputenc} % For input encoding
+\usepackage{geometry} % For page margins
+\geometry{a4paper, margin=0.75in} % Set paper size and margins
+\usepackage{titlesec} % For section title formatting
+\usepackage{enumitem} % For itemized list formatting
+\usepackage{hyperref} % For hyperlinks
+
+% Formatting
+\setlist{noitemsep} % Removes item separation
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule] % Section title format
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip} % Section title spacing
+
+% Begin document
+\begin{document}
+
+% Disable page numbers
+\pagestyle{empty}
+
+% Header
+\begin{center}
+\textbf{\Large Zain Siddiqui}\\[2pt] % Name
+St. Louis, MO| \href{mailto:example@example.com}{s.zain@wustl.edu} | 706-455-1501  % Contact info
+\end{center}
+
+\section{PERSONAL BACKGROUND}
+
+Born December 16, 1995 in Cleveland, TN, USA. 
+
+% Education Section
+\section*{EDUCATION}
+\noindent
+\textbf{Washington University in St. Louis}, St. Louis, MO \hfill Enrolled: Fall 2021| Expected Graduation: Spring 2026\\ % University name and location
+PhD in Mathematics\\
+Thesis Advisor: Renato Feres
+
+\noindent
+\\
+\textbf{Georgia Institute of Technology} \hfill Fall 2014-Spring 2019\\
+BS in Mathematics
+% Experience Section
+\section*{RESEARCH INTERESTS}
+\noindent
+Some of my interests are dynamics, stochastic processes, and ergodic theory.\\
+
+\noindent
+In particular, I am interested in dynamical billiards. Specifically, I am focused on polygonal billiards and the topology of their unfoldings, and I wish to understand these unfoldings using both topological and stochastic methods.
+% Projects Section
+\section*{PUBLICATIONS}
+\noindent
+Don't rush me!
+
+% Skills Section
+\section*{TEACHING EXPERIENCE}
+
+\textbf{Washington University in St. Louis}
+
+\begin{itemize}
+    \item Directed Reading Program, \emph{Geometry: Euclid and Beyond}
+    \hfill Spring 2024
+    \item Calculus I Teaching Assistant
+    \hfill Spring 2024
+    \item Calculus II Teaching Assistant \hfill Fall 2023
+    \item Calculus II Teaching Assistant \hfill Spring 2023
+\end{itemize}
+
+\noindent
+\textbf{Georgia Institute of Technology}
+
+\begin{itemize}
+    \item Calculus III Teaching Assistant \hfill Spring 2019
+    \item Calculus III Teaching Assistant \hfill Fall 2018
+    \item Calculus III Teaching Assistant \hfill Spring 2018
+    \item Calculus III Teaching Assistant \hfill Fall 2017
+    \item Calculus III Teaching Assistant \hfill Fall 2016
+\end{itemize}
+
+\section*{TALKS}
+\begin{itemize}
+    \item Szegő Seminar, Washington University in St. Louis, \emph{What an Incidence!: Hilbert's Axioms in Geometry} - March 2024
+    \item Candidacy Talk, Washington University in St. Louis, \emph{Unfolding a Billiard Table} - March 2024
+    
+\end{itemize}
+
+
+% End document
+\end{document}
