@@ -1,0 +1,78 @@
+\documentclass{article}
+
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{thmtools}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{framed}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+
+\colorlet{LightGray}{White!90!Periwinkle}
+\colorlet{LightOrange}{Orange!15}
+\colorlet{LightGreen}{Green!15}
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+
+\declaretheoremstyle[name=Theorem,]{thmsty}
+\declaretheorem[style=thmsty,numberwithin=section]{theorem}
+\tcolorboxenvironment{theorem}{colback=LightGray}
+
+\declaretheoremstyle[name=Proposition,]{prosty}
+\declaretheorem[style=prosty,numberlike=theorem]{proposition}
+\tcolorboxenvironment{proposition}{colback=LightOrange}
+
+\declaretheoremstyle[name=Principle,]{prcpsty}
+\declaretheorem[style=prcpsty,numberlike=theorem]{principle}
+\tcolorboxenvironment{principle}{colback=LightGreen}
+
+\setstretch{1.2}
+\geometry{
+    textheight=9in,
+    textwidth=5.5in,
+    top=1in,
+    headheight=12pt,
+    headsep=25pt,
+    footskip=30pt
+}
+
+% ------------------------------------------------------------------------------
+
+\begin{document}
+
+% ------------------------------------------------------------------------------
+% Cover Page and ToC
+% ------------------------------------------------------------------------------
+
+
+% ------------------------------------------------------------------------------
+Let us see how Green's theorem works in the case of a rectangular region.
+Let $R=[a,b]\times[c,d]$ be a rectangular region, and let $C$ denote the boundary
+curve, which is a rectangle, oriented counterclockwise. 
+Let $F = \langle M,N \rangle$ be a smooth vector field in the plane, meaning
+$M(x,y)$ and $N(x,y)$ are smooth real-valued functions. The integral of $F$ around $C$ is
+\[ \oint_C \vec{F} \cdot d\vec{r} = \oint_C Mdx + Ndy = \oint_C Mdx + \oint_C Ndy. \]
+
+Let us inspect $\oint_C M dx$. If we parametrize $C$ and evaluate this integral, 
+we notice that the vertical segments contribute nothing, since $dx=0$ when we traverse a vertical segment.
+So the integral reduces to
+\[\oint_C M dx = \int_a^b M(x,c) dx - \int_a^b M(x,d)dx=\int_a^b \left( M(x,c)-M(x,d)\right)dx.\]
+Now, for a fixed $x$, $M(x,y)$ is a function of $y$ which we can 
+differentiate with respect to $y$, as $\partial M(x,y) / \partial y$. The fundamental theorem
+of calculus tells us that
+\[M(x,d) - M(x,c) = \int_c^d \frac{\partial M(x,y)}{\partial y}dy. \]
+Substituting this back into our prior integral, noting the difference is sign, we obtain
+\[\oint_C M dx = \int_a^b \int_c^d -\frac{\partial M(x,y)}{\partial y}dydx=\int_R -\frac{\partial M}{\partial y}dA.\]
+
+The exact same work will show that 
+\[\int_C N dy = \int_R \frac{\partial N}{\partial x} dA,\]
+where this time there's no negative sign since the orientations agree now. 
+
+% ------------------------------------------------------------------------------
+
+\end{document}

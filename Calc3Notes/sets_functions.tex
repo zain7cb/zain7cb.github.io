@@ -1,0 +1,121 @@
+\documentclass{article}
+
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{thmtools}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{framed}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+
+\colorlet{LightGray}{White!90!Periwinkle}
+\colorlet{LightOrange}{Orange!15}
+\colorlet{LightGreen}{Green!15}
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+
+\declaretheoremstyle[name=Theorem,]{thmsty}
+\declaretheorem[style=thmsty,numberwithin=section]{theorem}
+\tcolorboxenvironment{theorem}{colback=LightGray}
+
+\declaretheoremstyle[name=Proposition,]{prosty}
+\declaretheorem[style=prosty,numberlike=theorem]{proposition}
+\tcolorboxenvironment{proposition}{colback=LightOrange}
+
+\declaretheoremstyle[name=Principle,]{prcpsty}
+\declaretheorem[style=prcpsty,numberlike=theorem]{principle}
+\tcolorboxenvironment{principle}{colback=LightGreen}
+
+\setstretch{1.2}
+\geometry{
+    textheight=9in,
+    textwidth=5.5in,
+    top=1in,
+    headheight=12pt,
+    headsep=25pt,
+    footskip=30pt
+}
+
+% ------------------------------------------------------------------------------
+
+\begin{document}
+
+% ------------------------------------------------------------------------------
+% Cover Page and ToC
+% ------------------------------------------------------------------------------
+
+
+% ------------------------------------------------------------------------------
+
+\section{Sets}
+
+We have no need to dive deeply into set theory, but I believe it will be helpful for us to have some of its tools and language. 
+A \textbf{set} is really just a collection of objects. For example,
+we can define $\mathbb{Z}$ to be the set of all integers
+\[\mathbb{Z}=\{\ldots,-2,-1,0,1,2,\ldots\}.\]
+An object $x$ inside a set $A$ is called an \textbf{element} of the set (or a \textbf{member} or \textbf{point}), and this relation is denoted $x \in A$ (which one can read as ``$x$ belongs to $A$'' or ``$x$ is in $A$'').
+If $x$ does not belong to $A$, we write $x \notin A$.
+
+We say a set $A$ is a \textbf{subset} of another set $B$ if every element that appears in $A$ also appears in $B$, and we write this relation as 
+$A \subset B$. In other words, $A \subset B$ if whenever we have $x \in A$, then we also have $x \in B$.
+For example, $\mathbb{Z}^+ = \{1,2,3,\ldots\}$ is a subset of $\mathbb{Z}$. Note that any set is a subset of itself.
+
+Some sets are too large for us to describe them by simply listing out the elements and putting them between curly brackets. The real numbers $\mathbb{R}$ are an example of this.
+The set of real numbers is still a perfectly fine set, however.  
+
+Quite often, it is natural to describe a set $A$ as a subset of another set $B$ by picking out those elements of $B$ that meet a certain condition.
+For example, we can describe the positive integers as 
+\[ \{ x \in \mathbb{Z} : x > 0\}, \]
+which one reads as ``all $x$ in $\mathbb{Z}$ such that $x > 0$''.
+As another example, consider
+\[ A = \{ x \in \mathbb{R} : |x| > 2\}.\]
+That is, $A$ is defined to be those real numbers that have absolute value greater than $2$. In interval notation, $A = (-\infty, -2) \cup (2, \infty)$.
+In general, this type of \textbf{set-builder} notation can be thought of as some kind vetting process, where we look at all the elements of some
+given set, keeping the ones satisfying the given condition and tossing out the ones that don't.
+
+There are some basic operations one can perform with sets. Let $A$ and $B$ be sets that are subsets of some larger set $U$. Then the \textbf{union} of these two sets, denoted $A \cup B$,
+is defined to be the set of all elements that appear in at least one of $A$ or $B$. That is,
+\[ A \cup B = \{x \in U : x \in A \text{ or } x \in B\}. \]
+Note that we use ``or'' in the inclusive sense, meaning the condition $x \in A \text{ or } x \in B$ is satisfied so long as $x$ is in at least one of $A,B$, so
+we allow the possibility of $x$ being in both.
+The \textbf{intersection} of $A$ and $B$, denoted $A \cap B$, is defined as 
+\[A \cap B = \{x \in U: x \in A \text{ and } x \in B\}.\]
+The \textbf{complement} of $A$ (in $U$), denoted $A^C$, is defined as
+\[A^C = \{x \in U: x \notin A\}.\]
+
+Another useful notion is that of the \textbf{Cartesian product}, denoted $A \times B$, of two sets $A$ and $B$. This is defined as a collection of ordered pairs,
+where the first ``coordinate'' is an element of $A$ and the second an element of $B$:
+\[A \times B = \{(a,b): a \in A \text{ and } b \in B\}.\]
+A familiar example is $\mathbb{R} \times \mathbb{R}$, the Cartesian plane. $\mathbb{R} \times \mathbb{R} \times \mathbb{R}$, usually 
+abbreviated as $\mathbb{R}^3$, is the familiar space of three dimensions.
+
+\section{Functions}
+
+A function is an object that specifies a way of assigning elements of one set to elements of another set, and for our purposes,
+this informal description is essentially enough. When we write $f: A \rightarrow B$, this is to say
+$f$ is a function that takes in a point of $A$ and spits out a unique point in $B$ (i.e.\ a function cannot spit out two different values for one input).
+The set $A$ is referred to as the \textbf{domain}, while $B$ is called the \textbf{codomain}. As a convention, $f: A \rightarrow B$ means that \emph{every} point in $A$ is sent somewhere; no point in $A$ is left unassigned.
+On the other hand, we don't require that every $b \in B$ is an output realized by $f$. For example,
+$\sin : \mathbb{R} \rightarrow \mathbb{R}$ is a function that is indeed defined for every real number but only takes values in $[-1,1]$,
+so any value outside of that range is not realized as an output of sine. This leads us to define the $\textbf{range}$ of $f$ as 
+\[ f(A) = \{f(x): x \in A\}.\]
+Note that it also makes sense to define $f(A')$ in the exact same way for some $A' \subset A$. $f(A')$ is called the \textbf{image}
+of $A'$ under $f$. So one could just as well say that the range of $f$ is the image of the domain $A$ under $f$.
+
+The $\textbf{graph}$ of $f$, sometimes denoted $\Gamma(f)$, is 
+\[\Gamma(f) = \{(x,f(x)): x \in A\} \subset A \times B.\]
+Note that for a real-valued $f: \mathbb{R} \rightarrow \mathbb{R}$, the graph of $f$ coincides with the usual 
+notion of the graph of a function (i.e.\ it's a squiggle that $f$ traces out in the plane).
+
+
+
+
+
+% ------------------------------------------------------------------------------
+
+\end{document}
