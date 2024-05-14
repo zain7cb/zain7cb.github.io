@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.2)  14 MAY 2024 14:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.2)  14 MAY 2024 14:20
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/apple/OneDrive/Documents/GitHub/zain7cb.github.io/Calc3Notes/coordinates_vectors_products.tex
-(c:/Users/apple/OneDrive/Documents/GitHub/zain7cb.github.io/Calc3Notes/coordinates_vectors_products.tex
+**c:/Users/apple/OneDrive/Documents/GitHub/zain7cb.github.io/Calc3Notes/OpeningRemarks.tex
+(c:/Users/apple/OneDrive/Documents/GitHub/zain7cb.github.io/Calc3Notes/OpeningRemarks.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
@@ -514,8 +514,8 @@ Package thmtools Info: Key `name' (with value `Principle')
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count309
 \l__pdf_internal_box=\box71
-) (./coordinates_vectors_products.aux)
-\openout1 = `coordinates_vectors_products.aux'.
+) (./OpeningRemarks.aux)
+\openout1 = `OpeningRemarks.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
 LaTeX Font Info:    ... okay on input line 46.
@@ -589,40 +589,33 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 46.
-(./coordinates_vectors_products.out) (./coordinates_vectors_products.out)
+(./OpeningRemarks.out) (./OpeningRemarks.out)
 \@outlinefile=\write4
-\openout4 = `coordinates_vectors_products.out'.
+\openout4 = `OpeningRemarks.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 61.
- (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 61.
- (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+ [1
 
-{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [2] (./coordinates_vectors_products.aux)
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./OpeningRemarks.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-Package rerunfilecheck Info: File `coordinates_vectors_products.out' has not changed.
+Package rerunfilecheck Info: File `OpeningRemarks.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 21888 strings out of 474115
- 406831 string characters out of 5747697
- 1946190 words of memory out of 5000000
- 43882 multiletter control sequences out of 15000+600000
- 561362 words of font info for 49 fonts, out of 8000000 for 9000
+ 21843 strings out of 474115
+ 405821 string characters out of 5747697
+ 1930190 words of memory out of 5000000
+ 43855 multiletter control sequences out of 15000+600000
+ 558982 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,14n,87p,635b,455s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on coordinates_vectors_products.pdf (2 pages, 103874 bytes).
+ 83i,5n,87p,621b,452s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on OpeningRemarks.pdf (1 page, 41650 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
+ 32 PDF objects out of 1000 (max. 8388607)
+ 22 compressed objects within 1 object stream
+ 3 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
