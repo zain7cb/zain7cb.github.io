@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1716148607 "/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/ZainCV.tex" "ZainCV.pdf" "ZainCV" 1716148608 0
-  "/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/ZainCV.tex" 1716148607 3079 c8f651cc62987dcade6c86f75f798368 ""
+["pdflatex"] 1716148690 "/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/ZainCV.tex" "ZainCV.pdf" "ZainCV" 1716148691 0
+  "/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/ZainCV.tex" 1716148690 3130 ef5e2eff1c1d2260e712425b86f30164 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1136768653 1536 02c06700a42be0f5a28664c7273f82e7 ""
@@ -57,9 +57,9 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1709422615 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1709422560 7883453 425cf9cde56a6b73db0d3394ac3a0367 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "ZainCV.aux" 1716148608 670 d03899f29cc88ce58ae560f4758233b1 "pdflatex"
-  "ZainCV.out" 1716148608 141 40126c8b1a9feb8c7bef8247a53a8521 "pdflatex"
-  "ZainCV.tex" 1716148607 3079 c8f651cc62987dcade6c86f75f798368 ""
+  "ZainCV.aux" 1716148691 670 d03899f29cc88ce58ae560f4758233b1 "pdflatex"
+  "ZainCV.out" 1716148691 141 40126c8b1a9feb8c7bef8247a53a8521 "pdflatex"
+  "ZainCV.tex" 1716148690 3130 ef5e2eff1c1d2260e712425b86f30164 ""
   (generated)
   "ZainCV.aux"
   "ZainCV.log"
