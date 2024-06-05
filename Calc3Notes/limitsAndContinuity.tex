@@ -91,6 +91,21 @@ One would like to get away from the madness of using deltas and epsilons to demo
 has a limit at a given point. Fortunately, by establishing a few properties and formulas, one can then wield
 these properties and formulas to compute a wide variety of limits.
 
+\begin{proposition} (Limit properties)
+
+
+Suppose for the below that $\lim_{(x,y) \to (x_0,y_0)} f(x,y) = L$ and $\lim_{(x,y) \to (x_0,y_0)} g(x,y) = M$. Here,
+$f$ and $g$ are real-valued.
+    \begin{itemize}
+        \item $\lim_{(x,y) \to (x_0,y_0)} x = x_0$ 
+        \item $\lim_{(x,y) \to (x_0,y_0)} y = y_0$
+        \item $\lim_{(x,y) \to (x_0,y_0)} f(x,y) \pm g(x,y) = M \pm L$
+        \item $\lim_{(x,y) \to (x_0,y_0)} f(x,y)g(x,y) = LM$
+        \item $\lim_{(x,y) \to (x_0,y_0)} f/g = L/M$ provided $M\neq 0$.
+    \end{itemize}
+\end{proposition}
+
+Showing that these properties hold is a little tricky, so we'll take them on faith.
 % ------------------------------------------------------------------------------
 
 \end{document}
