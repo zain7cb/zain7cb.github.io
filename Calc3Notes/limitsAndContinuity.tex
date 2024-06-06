@@ -61,9 +61,9 @@ Let $x=(x_1,\ldots,x_n)$ and $y=(y_1,\ldots,y_n)$ be points. The distance
 between them is 
 \[ d(x,y)=\norm{x-y}= \sqrt{(x_1-y_1)^2+\cdots+(x_n-y_n)^2} .\]
 In the case where $n=1$ (i.e. when $x$ and $y$ are just numbers), we see
-the distance is the absolute of the difference $x-y$.
+the distance is the absolute value of the difference $x-y$ (recall that $\sqrt{x^2}=|x|$).
 
-Recall that $\sqrt{x^2}=|x|$. If $a$ and $b$ are \emph{nonnegative} and $a\leq b$, then 
+If $a$ and $b$ are \emph{nonnegative} and $a\leq b$, then 
 $\sqrt{a} \leq \sqrt{b}$. Conversely, if $\sqrt{a} \leq \sqrt{b}$, then $a\leq b$. In particular,
 we have $|x|=\sqrt{x^2} \leq \sqrt{x^2 + y^2}$. In the same way, $|y| \leq \sqrt{x^2+y^2}$, and of course,
 this works for more than just two variables.
@@ -101,11 +101,11 @@ $f$ and $g$ are real-valued.
         \item $\lim_{(x,y) \to (x_0,y_0)} y = y_0$
         \item $\lim_{(x,y) \to (x_0,y_0)} f(x,y) \pm g(x,y) = M \pm L$
         \item $\lim_{(x,y) \to (x_0,y_0)} f(x,y)g(x,y) = LM$
-        \item $\lim_{(x,y) \to (x_0,y_0)} f/g = L/M$ provided $M\neq 0$.
+        \item $\lim_{(x,y) \to (x_0,y_0)} f(x,y)/g(x,y) = L/M$ provided $M\neq 0$.
     \end{itemize}
 \end{proposition}
 
-Showing that these properties hold is a little tricky, so we'll take them on faith.
+Showing that these properties hold is a little technical, so we'll take them on faith.
 % ------------------------------------------------------------------------------
 
 \end{document}
