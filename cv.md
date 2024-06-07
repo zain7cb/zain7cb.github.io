@@ -1,1 +1,0 @@
-Here is a link to [my CV](https://zain7cb.github.io/ZainCV.pdf)
