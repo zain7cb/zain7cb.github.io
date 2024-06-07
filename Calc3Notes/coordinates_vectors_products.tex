@@ -181,5 +181,21 @@ To prove this, observe that
     &\iff 4 A \cdot B = 0\\
     &\iff A \cdot B = 0.
 \end{align*}
+
+Suppose again that we have two nonzero vectors $A$ and $B$ in the plane, located at the origin.
+If we move along the line through $\overrightarrow{OB}$, there will be some point $P$ on this line such
+that $\overrightarrow{PA}$ is perpendicular to $\overrightarrow{OB}$. Then $P = c B$ for some number $c$.
+Then we have $(A - P)\cdot B = (A - cB)\cdot B = 0$, which is to say
+\[A \cdot B - c B \cdot B = 0,\]
+so that
+\[c = \frac{A \cdot B}{B \cdot B}.\]
+
+Conversely, we see that
+\[\left( A - \frac{A \cdot  B}{B \cdot B} B \right) \cdot B = A\cdot B - A \cdot B = 0.\]
+Thus, this is the unique number $c$ that makes $A - cB$ perpendicular to $B$. This number $c$ is called
+the \textbf{component} of $A$ along $B$. If we do a little plane geometry, we see that
+\[\cos \theta = \frac{c \norm{B}}{\norm{A}},\]
+which can be rewritten as 
+\[\norm{A} \norm{B} \cos \theta = A \cdot B.\]
 % ------------------------------------------------------------------------------
 \end{document}

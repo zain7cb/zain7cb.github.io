@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.2)  7 JUN 2024 14:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.2)  7 JUN 2024 15:16
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -614,7 +614,7 @@ File: perpendicular.PNG Graphic file (type png)
 <use perpendicular.PNG>
 Package pdftex.def Info: perpendicular.PNG  used on input line 172.
 (pdftex.def)             Requested size: 303.7591pt x 94.10132pt.
- [3 <./perpendicular.PNG>] (./coordinates_vectors_products.aux)
+ [3 <./perpendicular.PNG>] [4] (./coordinates_vectors_products.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -623,18 +623,18 @@ Package rerunfilecheck Info: File `coordinates_vectors_products.out' has not cha
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 22572 strings out of 474115
- 414933 string characters out of 5747697
+ 22573 strings out of 474115
+ 414939 string characters out of 5747697
  1946190 words of memory out of 5000000
  44549 multiletter control sequences out of 15000+600000
  561362 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,14n,93p,635b,454s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 83i,14n,93p,635b,461s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on coordinates_vectors_products.pdf (3 pages, 140380 bytes).
+Output written on coordinates_vectors_products.pdf (4 pages, 142613 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
+ 98 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
