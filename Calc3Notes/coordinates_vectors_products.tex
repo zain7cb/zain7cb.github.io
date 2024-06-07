@@ -170,5 +170,16 @@ We can convince ourselves that $A$ and $B$ form a right angle precisely when
 \[\norm{A-B} = \norm{A+B}.\]
 
 \includegraphics[scale = 0.5]{perpendicular.PNG}
+
+If we accept this, then the equivalence of our two definitions of perpendicularity will follow from 
+\[\norm{A+B}=\norm{A-B} \iff A \cdot B = 0.\]
+
+To prove this, observe that
+\begin{align*}
+    \norm{A+B}=\norm{A-B}&\iff \norm{A + B}^2 = \norm{A - B}^2\\
+    &\iff A\cdot A + 2 A \cdot B + B \cdot B = A \cdot A - 2 A \cdot B + B \cdot B\\
+    &\iff 4 A \cdot B = 0\\
+    &\iff A \cdot B = 0.
+\end{align*}
 % ------------------------------------------------------------------------------
 \end{document}
