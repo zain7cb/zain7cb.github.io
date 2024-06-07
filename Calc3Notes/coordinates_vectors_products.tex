@@ -55,7 +55,7 @@
 
 
 
-\section*{Points in 3-space and beyond}
+\section*{Points in 2-space, 3-space, and Beyond}
 
 In the same way that we can specify a point in the plane with 
 two numbers, we can specify a point in space with three numbers
@@ -155,5 +155,20 @@ we have $\norm{cA} = |c|\norm{A}$. For two points $A,B$, the \textbf{distance}
 between them is 
 \[\norm{A-B}= \sqrt{(A-B)\cdot(A-B)}.\]
 
+A vector $E$ is a \textbf{unit vector} if $\norm{E}=1$. Dividing a nonzero vector by its norm always yields
+a unit vector, since 
+\[\norm{\frac{A}{\norm{A}}} = \frac{1}{\norm{A}} \norm{A} = 1.\]
+
+Two nonzero vectors $A$ and $B$ have the \textbf{same direction} if there is some $c>0$ such that
+$cA = B$. So, for instance, $A/\norm{A}$ is a unit vector in the same direction as $A$.
+
+\section*{Perpendicularity, Angle Between Vectors}
+
+We have two notions of ``perpendicular'' floating around. One says $A$ and $B$ are perpendicular if $A \cdot B = 0$.
+The other is the more familiar notion of $A$ and $B$ forming a right angle. Suppose that $A$ and $B$ lie in the plane.
+We can convince ourselves that $A$ and $B$ form a right angle precisely when
+\[\norm{A-B} = \norm{A+B}.\]
+
+\includegraphics[scale = 0.5]{perpendicular.PNG}
 % ------------------------------------------------------------------------------
 \end{document}

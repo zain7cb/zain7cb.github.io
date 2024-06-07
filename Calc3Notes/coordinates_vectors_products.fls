@@ -276,6 +276,11 @@ INPUT c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+INPUT ./perpendicular.PNG
+INPUT ./perpendicular.PNG
+INPUT ./perpendicular.PNG
+INPUT ./perpendicular.PNG
+INPUT ./perpendicular.PNG
 INPUT coordinates_vectors_products.aux
 INPUT ./coordinates_vectors_products.out
 INPUT ./coordinates_vectors_products.out
