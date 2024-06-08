@@ -1,0 +1,85 @@
+\documentclass{article}
+
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{thmtools}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{framed}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+
+\colorlet{LightGray}{White!90!Periwinkle}
+\colorlet{LightOrange}{Orange!15}
+\colorlet{LightGreen}{Green!15}
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+
+\declaretheoremstyle[name=Theorem,]{thmsty}
+\declaretheorem[style=thmsty,numberwithin=section]{theorem}
+\tcolorboxenvironment{theorem}{colback=LightGray}
+
+\declaretheoremstyle[name=Proposition,]{prosty}
+\declaretheorem[style=prosty,numberlike=theorem]{proposition}
+\tcolorboxenvironment{proposition}{colback=LightOrange}
+
+\declaretheoremstyle[name=Principle,]{prcpsty}
+\declaretheorem[style=prcpsty,numberlike=theorem]{principle}
+\tcolorboxenvironment{principle}{colback=LightGreen}
+
+\setstretch{1.2}
+\geometry{
+    textheight=9in,
+    textwidth=5.5in,
+    top=1in,
+    headheight=12pt,
+    headsep=25pt,
+    footskip=30pt
+}
+
+% ------------------------------------------------------------------------------
+
+\begin{document}
+
+
+% ------------------------------------------------------------------------------
+
+\textbf{Exercise 1.}
+ Let $A = (1,2)$, $B = (3,1)$. Draw the points $A+B$, $A+2B$, $A+3B$, $A-B$, $A-2B$, and $A - 3B$
+ on a sheet of graph paper (or a reasonably drawn set of axes).
+
+\textbf{Exercise 2.} Which of the following pairs of vectors are perpendicular?
+\begin{itemize}
+    \item $(1,-1,1), (2,1,5)$ 
+    \item $(1,-1,1), (2,3,1)$ 
+    \item $(-5,2,7), (3,-1,2)$
+    \item $(\pi,2,1), (2,-\pi,0)$
+\end{itemize}
+
+\textbf{Exercise 3.}
+Suppose $A = (a_1,a_2,a_3)$ is perpendicular to every vector $X$. Show that
+$A$ is the zero vector.
+
+\textbf{Exercise 4.}  Determine the interior angles of the triangle whose vertices are 
+$(2, -1, 1)$, $(1, - 3, - 5)$, and $(3, -4, -4)$.
+
+\textbf{Exercise 5.} Let $A_1, \ldots, A_r$ be vectors which are mutually perpendicular
+(i.e. $A_i \cdot A_j = 0$ whenever $i \neq j$). Suppose $c_1, \ldots, c_r$ are numbers such that
+\[c_1 A_1 + \cdots + c_r A_r = 0.\]
+Show that we must have $c_i = 0$ for each $i=1,\ldots, r$.
+
+\textbf{Exercise 6.} Let $P = (1,3, -1)$ and $Q = (-4,5,2)$. 
+Determine the coordinates of the following points
+\begin{itemize}
+    \item The midpoint of the line segment between $P$ and $Q$
+    \item The point on this line segment that is two thirds of the way from $P$ to $Q$.
+\end{itemize}
+
+
+% ------------------------------------------------------------------------------
+
+\end{document}
