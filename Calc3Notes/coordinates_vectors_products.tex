@@ -221,5 +221,42 @@ to the plane. If we walk from $P$ to some other point $X$ also on the plane,
 we must have that $X-P$ is perpendicular to $N$, otherwise $X$ won't lie
 on the plane $M$. So the plane is the set of points $X$ satisfying
 \[N \cdot (X-P) = 0.\]
+
+Note that this gives a nice interpretation of the equation for a line
+in the plane $ax+by=c$. $(a,b)$ is a normal vector to the line!
+If $c=0$, the equation becomes $(a,b)\cdot (x,y) = 0$, so we have
+a line through the origin, consisting of all vectors (located at the origin)
+perpendicular to $(a,b)$. Changing the value of $c$ yields a family
+of parallel lines.
+
+\section*{The Cross Product}
+
+If $A=(a_1,a_2,a_3)$ and $B=(b_1,b_2,b_3)$ are vectors in $\mathbb{R}^3$,
+their cross product $A \times B$ is the determinant
+\[ \begin{vmatrix}
+    E_1 & E_2 & E_3\\
+    a_1 & a_2 & a_3\\
+    b_1 & b_2 & b_3
+    \end{vmatrix} .\]
+
+This is really more of mnemonic device than an actual definition, since
+the determinant is defined only for matrices with numerical entries. 
+
+$A \times B$ is perpendicularto both $A$ and $B$. We also have 
+\emph{anticommutativity}, meaning $B \times A = -(A \times B)$.
+
+One can verify that $\norm{A \times B}^2 = \norm{A}^2 \norm{B}^2 - (A \cdot B)^2$.
+
+Using our geometric formula for the dot product, we have
+\begin{align*}
+    \norm{A \times B}^2 &= \norm{A}^2 \norm{B}^2 - \norm{A}^2 \norm{B}^2 \cos^2(\theta)\\
+    &= \norm{A}^2 \norm{B}^2 (1 - \cos^2(\theta))\\
+    &= \norm{A}^2 \norm{B}^2 \sin^2(\theta).
+\end{align*}
+Taking square roots, we have
+\[\norm{A\times B} = \norm{A} \norm{B} |\sin(\theta)|. \]
+So the magnitude of the cross product is the area of parallelogram
+spanned by $A$ and $B$.
+
 % ------------------------------------------------------------------------------
 \end{document}
