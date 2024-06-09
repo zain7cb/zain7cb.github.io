@@ -75,13 +75,31 @@ We can write $X(t)$ as its individual coordinate functions
 Just as with ordinary real-valued function, we can take derivatives by 
 looking at the limit
 \[\lim_{h \to 0} \frac{X(t+h)-X(t)}{h}.\]
-Writing out components, this is simply
+Here, dividing by $h$ really means scaling the vector by $1/h$. Writing out components, this is simply
 \[\lim_{h \to 0} \frac{(x_1(t+h)-x_1(t), \ldots, x_n(t+h)-x_n(t))}{h}.\]
 If the individual components are all differentiable, we obtain a
 new vector-valued function
-\[X'(t) = ()\]
+\[X'(t) = (x_1'(t), \ldots, x_n'(t)).\]
+$X'(t)$ is called the \textbf{derivative} or \textbf{velocity} of $X(t)$. 
+
+So for the example $X(t) = (\cos(t), \sin(t), t)$, we have
+\[X'(t) = (-\sin(t), \cos(t), 1).\]
+
+The velocity is parallel to the direction of instantaneous motion.
 
 
+\textbf{Example.} 
+Find a parametric equation of the tangent line to the curve $X(t) = (\sin t, \cos t)$
+at $t=\pi/3$. 
+
+We need two pieces of information: a point on the line, and a direction vector of the line.
+These are supplied by $X(\pi/3)$ and $X'(\pi/3)$ respectively. The tangent line $L(t)$ can thus be 
+written 
+\begin{align*}
+    L(s) |_{t=\pi/3} &= X(\pi/3) + sX'(\pi/3)  \\
+    &= \left( \frac{\sqrt{3}}{2} + \frac{1}{2}s,\ \frac{1}{2} - \frac{\sqrt{3}}{2}s \right).
+\end{align*}
+We used the parameter $s$ for the line to avoid confusion with the already defined $X(t)$ above.
 
 % ------------------------------------------------------------------------------
 
