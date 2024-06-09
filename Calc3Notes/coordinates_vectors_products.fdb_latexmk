@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1717956754 "/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/Calc3Notes/coordinates_vectors_products.tex" "coordinates_vectors_products.pdf" "coordinates_vectors_products" 1717956755 0
-  "/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/Calc3Notes/coordinates_vectors_products.tex" 1717956753 10917 772988b7d4ef6c0cbded9b7d886539c4 ""
+["pdflatex"] 1717956844 "/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/Calc3Notes/coordinates_vectors_products.tex" "coordinates_vectors_products.pdf" "coordinates_vectors_products" 1717956846 0
+  "/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/Calc3Notes/coordinates_vectors_products.tex" 1717956844 10918 aef341e52c34dbbbf19ba38b8dcc4224 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -166,9 +166,9 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1709422615 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1709422560 7883453 425cf9cde56a6b73db0d3394ac3a0367 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "coordinates_vectors_products.aux" 1717956755 634 41aaec9967cd98966ae9c3e723e869af "pdflatex"
-  "coordinates_vectors_products.out" 1717956755 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "coordinates_vectors_products.tex" 1717956753 10917 772988b7d4ef6c0cbded9b7d886539c4 ""
+  "coordinates_vectors_products.aux" 1717956845 634 41aaec9967cd98966ae9c3e723e869af "pdflatex"
+  "coordinates_vectors_products.out" 1717956845 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "coordinates_vectors_products.tex" 1717956844 10918 aef341e52c34dbbbf19ba38b8dcc4224 ""
   "perpendicular.PNG" 1717871105 17117 4a862c7690a838c3b5171de58800a7ea ""
   (generated)
   "coordinates_vectors_products.aux"
