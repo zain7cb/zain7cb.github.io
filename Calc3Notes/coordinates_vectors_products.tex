@@ -207,11 +207,21 @@ the position $X$ of a particle or bug as it travels with
 the passing of time $t$. $X(t)$ is sometimes called the
 \textbf{position vector} of the particle/bug. The position vector
 is a vector located at the origin, terminating at the position of 
-the bug. 
-
+the bug. The figure below illustrates how the parametrization works:
+we start $P$, and as $t$ varies, we shift $P$ by a multiple of $A$. As $t$ ranges over all of
+$\mathbb{R}$, this traces out a line.
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale = 0.5]{paramLine.PNG}
+\end{figure}
+    
 Given two points $P$ and $Q$, we can parametrize the line segment 
 between them as 
 \[X(t) = P + t(Q-P),\ 0 \leq t \leq 1.\]
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale = 0.5]{segment.PNG}
+\end{figure}
 
 \section*{Planes}
 
