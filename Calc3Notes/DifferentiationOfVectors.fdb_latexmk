@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1718133845 "/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/Calc3Notes/DifferentiationOfVectors.tex" "DifferentiationOfVectors.pdf" "DifferentiationOfVectors" 1718133847 0
-  "/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/Calc3Notes/DifferentiationOfVectors.tex" 1718133844 5312 b5b5e6a3371ceb965893dae0b79cde4e ""
+["pdflatex"] 1718134960 "/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/Calc3Notes/DifferentiationOfVectors.tex" "DifferentiationOfVectors.pdf" "DifferentiationOfVectors" 1718134961 0
+  "/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/Calc3Notes/DifferentiationOfVectors.tex" 1718134960 5482 6a73e2c74d5ed8b0dd3e224c1dd637e6 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -162,9 +162,9 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1709422615 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1709422560 7883453 425cf9cde56a6b73db0d3394ac3a0367 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "DifferentiationOfVectors.aux" 1718133847 634 a2826a8e89f45c25d2d97c45f4d4cffc "pdflatex"
-  "DifferentiationOfVectors.out" 1718133846 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "DifferentiationOfVectors.tex" 1718133844 5312 b5b5e6a3371ceb965893dae0b79cde4e ""
+  "DifferentiationOfVectors.aux" 1718134961 634 a2826a8e89f45c25d2d97c45f4d4cffc "pdflatex"
+  "DifferentiationOfVectors.out" 1718134961 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "DifferentiationOfVectors.tex" 1718134960 5482 6a73e2c74d5ed8b0dd3e224c1dd637e6 ""
   (generated)
   "DifferentiationOfVectors.aux"
   "DifferentiationOfVectors.log"
