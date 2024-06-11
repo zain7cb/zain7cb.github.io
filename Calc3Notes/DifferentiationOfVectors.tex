@@ -105,6 +105,35 @@ The \textbf{speed} of the curve $X(t)$, denoted $v(t)$, is defined to be
 \[v(t) = \norm{X'(t)}.\]
 
 \textbf{acceleration} is the second derivative $X''(t)$.
+
+We note also that differentiation is linear, meaning
+\[\frac{d}{dt} \left( X(t) + Y(t) \right) = X'(t) + Y'(t)\]
+and 
+\[\frac{d}{dt} cX(t) = cX'(t).\]
+
+We also have a product rule:
+\[\frac{d}{dt} X(t) \cdot Y(t) = X'(t)\cdot Y(t) + X(t) \cdot Y'(t).\]
+This follows from applying the ordinary product rule. If $X(t) = (x_1(t), x_2(t))$ and
+$Y(t) = (y_1(t), y_2(t))$, then
+\begin{align*}
+    \frac{d}{dt} X(t) \cdot Y(t) &= \frac{d}{dt} (x_1y_1 + x_2y_2)\\
+    &= x_1'y_1 + x_1y_1' + x_2'y_2 + x_2y_2'\\
+    &= x_1'y_1 + x_2'y_2 + x_1y_1' + x_2y_2'\\
+    &= X'(t)\cdot Y(t) + X(t) \cdot Y'(t).
+\end{align*}
+Of course, this same argument works in dimensions higher than 2.
 % ------------------------------------------------------------------------------
+\section*{Length of Curves}
+If we integrate the speed $v(t)$ of $X(t)$ from time $t=a$ to $t=b$,
+we obtain the distance traveled by $X(t)$ during the time interval $[a,b]$:
+\[\text{distance} = \int_a^b v(t)dt.\]
+
+\textbf{Example.} Let $X(t) = (\cos(t), \sin(t))$ describe a particle.
+What distance does $X(t)$ traverse from $t=0$ to $t=1$?
+
+We have $X'(t)=(-\sin(t), \cos(t))$. Then $v(t) = \norm{X'(t)} 
+= \sqrt{(-\sin(t))^2 + \cos^2(t)} = 1$. So the distance $D$ is 
+\[D = \int_0^1 1 dt = 1.\]
+
 
 \end{document}
