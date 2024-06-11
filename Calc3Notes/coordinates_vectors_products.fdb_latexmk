@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1718063844.21361 "c:/Users/apple/OneDrive/Documents/GitHub/zain7cb.github.io/Calc3Notes/coordinates_vectors_products.tex" "coordinates_vectors_products.pdf" "coordinates_vectors_products" 1718063845.43932 0
-  "c:/Users/apple/OneDrive/Documents/GitHub/zain7cb.github.io/Calc3Notes/coordinates_vectors_products.tex" 1718063843 11572 b3ebba77cde7c43c02743a084e1b8cb2 ""
+["pdflatex"] 1718071043.89317 "c:/Users/apple/OneDrive/Documents/GitHub/zain7cb.github.io/Calc3Notes/coordinates_vectors_products.tex" "coordinates_vectors_products.pdf" "coordinates_vectors_products" 1718071045.17536 0
+  "c:/Users/apple/OneDrive/Documents/GitHub/zain7cb.github.io/Calc3Notes/coordinates_vectors_products.tex" 1718071043 12932 63a7bac1ef3930619bba96d108e3497f ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1709418238 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1709419132 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1709418750 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -164,11 +164,14 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1709422823 5518052 de2a91c664d75f3971de4662dc6b5a65 ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1709422934 8221430 b3a1caef31d0871cfe8fae768bf12828 ""
   "c:/texlive/2023/texmf.cnf" 1709422806 713 e69b156964470283e0530f5060668171 ""
-  "coordinates_vectors_products.aux" 1718063845 242 f57ec3d9d99f2931d959138811223074 "pdflatex"
-  "coordinates_vectors_products.out" 1718063845 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "coordinates_vectors_products.tex" 1718063843 11572 b3ebba77cde7c43c02743a084e1b8cb2 ""
+  "coordinates_vectors_products.aux" 1718071045 242 63116ff0c40c4b7c91a468141e5801fd "pdflatex"
+  "coordinates_vectors_products.out" 1718071044 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "coordinates_vectors_products.tex" 1718071043 12932 63a7bac1ef3930619bba96d108e3497f ""
+  "crossprod.PNG" 1718071014 13585 a89ca09fad90f8607fe6855254296288 ""
+  "distancetoplane.PNG" 1718070247 18660 28abe457d84710acb231bc82056c6d2a ""
   "paramLine.PNG" 1718063363 8622 f082eabf3f959159f0e49ee9d2063f4b ""
   "perpendicular.PNG" 1717787660 17117 29c657b0ecd40b39d2f6a564ac8176e3 ""
+  "planes.PNG" 1718064000 18695 e7d7acf1c4cab5d3fe4b9d63d691d72c ""
   "segment.PNG" 1718063826 6559 ea9fe1d208a5af4630d8af8855c8888e ""
   (generated)
   "coordinates_vectors_products.aux"

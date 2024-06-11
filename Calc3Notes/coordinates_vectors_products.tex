@@ -198,6 +198,19 @@ the \textbf{component} of $A$ along $B$. If we do a little plane geometry, we se
 which can be rewritten as 
 \[\norm{A} \norm{B} \cos \theta = A \cdot B.\]
 
+The \textbf{projection} of $A$ onto $B$ is 
+\[\frac{A \cdot B}{B \cdot B} B.\]
+Note that if $D = cB$, then 
+\begin{align*}
+    \frac{A \cdot D}{D \cdot D} D &= \frac{A \cdot cB}{cB \cdot cB} cB\\
+    &= \frac{A \cdot B}{B \cdot B} B,
+\end{align*}
+so the projection of $A$ onto $B$ doesn't strictly depend on $B$; projecting onto any multiple of
+$B$ will yield the same vector (the component, however, \emph{does} up to a sign).
+
+Note also that if $B$ is a unit vector, the component simplifies to $A \cdot B$, and the projection of 
+$A$ onto $B$ simplifies to $(A \cdot B) B$.
+
 \section*{Parametric Lines}
 Given a direction vector $A$ and a point $P$, the \textbf{parametric line}
 in the direction of $A$ passing through $P$ is given by
@@ -231,6 +244,10 @@ to the plane. If we walk from $P$ to some other point $X$ also on the plane,
 we must have that $X-P$ is perpendicular to $N$, otherwise $X$ won't lie
 on the plane $M$. So the plane is the set of points $X$ satisfying
 \[N \cdot (X-P) = 0.\]
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale = 0.5]{planes.PNG}
+\end{figure}
 
 Note that this gives a nice interpretation of the equation for a line
 in the plane $ax+by=c$. $(a,b)$ is a normal vector to the line!
@@ -238,6 +255,18 @@ If $c=0$, the equation becomes $(a,b)\cdot (x,y) = 0$, so we have
 a line through the origin, consisting of all vectors (located at the origin)
 perpendicular to $(a,b)$. Changing the value of $c$ yields a family
 of parallel lines.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale = 0.5]{distancetoplane.PNG}
+\end{figure}
+
+Suppose that we have a plane passing through $P$ and perpendicular to $N$, and let 
+$Q$ be some point not on the plane. How can we compute the (smallest) distance of $Q$ to the plane?
+The smallest distance corresponds to the length of the segment formed by drawing a perpendicular to
+the plane from the point $Q$. We can obtain this length by projecting $Q-P$ onto $N$ and taking the norm:
+
+\[\text{length} = \left|  (Q-P)\cdot \frac{N}{\norm{N}} \right|\]
 
 \section*{The Cross Product}
 
@@ -267,6 +296,11 @@ Taking square roots, we have
 \[\norm{A\times B} = \norm{A} \norm{B} |\sin(\theta)|. \]
 So the magnitude of the cross product is the area of parallelogram
 spanned by $A$ and $B$.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale = 0.5]{crossprod.PNG}
+\end{figure}
 
 % ------------------------------------------------------------------------------
 \end{document}
