@@ -1,9 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1717968158.5356 "c:/Users/apple/OneDrive/Documents/GitHub/zain7cb.github.io/Calc3Notes/DifferentiationOfVectors.tex" "DifferentiationOfVectors.pdf" "DifferentiationOfVectors" 1717968159.64822 0
-  "DifferentiationOfVectors.aux" 1717968159 242 8a79e9c2e1afc95530028f12356652aa "pdflatex"
-  "DifferentiationOfVectors.out" 1717968159 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "DifferentiationOfVectors.tex" 1717968157 3819 c2cb3b46ba887329d8506d0acbac6653 ""
-  "c:/Users/apple/OneDrive/Documents/GitHub/zain7cb.github.io/Calc3Notes/DifferentiationOfVectors.tex" 1717968157 3819 c2cb3b46ba887329d8506d0acbac6653 ""
+["pdflatex"] 1718071651.11905 "c:/Users/apple/OneDrive/Documents/GitHub/zain7cb.github.io/Calc3Notes/DifferentiationOfVectors.tex" "DifferentiationOfVectors.pdf" "DifferentiationOfVectors" 1718071652.31428 0
+  "DifferentiationOfVectors.aux" 1718071652 242 8a79e9c2e1afc95530028f12356652aa "pdflatex"
+  "DifferentiationOfVectors.out" 1718071652 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "DifferentiationOfVectors.tex" 1718071650 3944 4cd974e74ea4ec45a9369b53e4c1442a ""
+  "c:/Users/apple/OneDrive/Documents/GitHub/zain7cb.github.io/Calc3Notes/DifferentiationOfVectors.tex" 1718071650 3944 4cd974e74ea4ec45a9369b53e4c1442a ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1709419132 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1709417545 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1709417545 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -132,6 +132,8 @@
   "c:/texlive/2023/texmf-dist/tex/latex/kvoptions/kvoptions.sty" 1709419842 22555 6d8e155cfef6d82c3d5c742fea7c992e ""
   "c:/texlive/2023/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty" 1709419843 13815 760b0c02f691ea230f5359c4e1de23a7 ""
   "c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1709419850 30006 3d512c0edd558928ddea1690180ef77e ""
+  "c:/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty" 1709419854 6565 10e89ed128ccd59431746bbdd82129fc ""
+  "c:/texlive/2023/texmf-dist/tex/latex/l3packages/xparse/xparse.sty" 1709419872 9327 11bedad2ac38f92e405a38ed18489a03 ""
   "c:/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg" 1709419958 678 4792914a8f45be57bb98413425e4c7af ""
   "c:/texlive/2023/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty" 1709420944 1090 bae35ef70b3168089ef166db3e66f5b2 ""
   "c:/texlive/2023/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty" 1709420944 373 00b204b1d7d095b892ad31a7494b0373 ""
@@ -139,6 +141,7 @@
   "c:/texlive/2023/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty" 1709420944 989 c49c8ae06d96f8b15869da7428047b1e ""
   "c:/texlive/2023/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty" 1709420944 443 8c872229db56122037e86bcda49e14f3 ""
   "c:/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty" 1709420944 325 f9f16d12354225b7dd52a3321f085955 ""
+  "c:/texlive/2023/texmf-dist/tex/latex/physics/physics.sty" 1709420994 29610 a9597219b282d9c78b02393dcd7d4322 ""
   "c:/texlive/2023/texmf-dist/tex/latex/refcount/refcount.sty" 1709421421 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "c:/texlive/2023/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1709421443 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "c:/texlive/2023/texmf-dist/tex/latex/setspace/setspace.sty" 1709421622 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""

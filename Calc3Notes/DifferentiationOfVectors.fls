@@ -226,6 +226,12 @@ INPUT c:/texlive/2023/texmf-dist/tex/latex/environ/environ.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/environ/environ.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+INPUT c:/texlive/2023/texmf-dist/tex/latex/physics/physics.sty
+INPUT c:/texlive/2023/texmf-dist/tex/latex/physics/physics.sty
+INPUT c:/texlive/2023/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT c:/texlive/2023/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT c:/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT c:/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
 INPUT c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT ./DifferentiationOfVectors.aux

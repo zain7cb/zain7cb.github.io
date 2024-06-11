@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.2)  9 JUN 2024 16:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.2)  10 JUN 2024 21:07
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -496,12 +496,22 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@temp=\box68
 \tcb@temp=\box69
 \tcb@temp=\box70
-)
+) (c:/texlive/2023/texmf-dist/tex/latex/physics/physics.sty
+Package: physics 
+ (c:/texlive/2023/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (c:/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2024-02-20 L3 programming layer (loader) 
+ (c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count308
+\l__pdf_internal_box=\box71
+))
+Package: xparse 2024-02-18 L3 Experimental document command parser
+))
 Package thmtools Info: Key `name' (with value `Theorem')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
 (thmtools)             that uses `style=thmsty' on input line 22.
-\c@theorem=\count308
+\c@theorem=\count309
 Package thmtools Info: Key `name' (with value `Proposition')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
@@ -510,11 +520,7 @@ Package thmtools Info: Key `name' (with value `Principle')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
 (thmtools)             that uses `style=prcpsty' on input line 30.
- (c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count309
-\l__pdf_internal_box=\box71
-) (./DifferentiationOfVectors.aux)
+ (./DifferentiationOfVectors.aux)
 \openout1 = `DifferentiationOfVectors.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
@@ -616,15 +622,15 @@ Package rerunfilecheck Info: File `DifferentiationOfVectors.out' has not changed
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 21881 strings out of 474115
- 406670 string characters out of 5747697
- 1938190 words of memory out of 5000000
- 43879 multiletter control sequences out of 15000+600000
+ 22547 strings out of 474115
+ 414437 string characters out of 5747697
+ 1939190 words of memory out of 5000000
+ 44535 multiletter control sequences out of 15000+600000
  560681 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,10n,87p,631b,461s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 83i,10n,93p,631b,461s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on DifferentiationOfVectors.pdf (2 pages, 103301 bytes).
+Output written on DifferentiationOfVectors.pdf (2 pages, 103976 bytes).
 PDF statistics:
  71 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream
