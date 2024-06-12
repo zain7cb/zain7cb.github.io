@@ -129,8 +129,8 @@ has as a particular case
 % ------------------------------------------------------------------------------
 \section*{Length of Curves}
 If we integrate the speed $v(t)$ of $X(t)$ from time $t=a$ to $t=b$,
-we obtain the distance traveled by $X(t)$ during the time interval $[a,b]$:
-\[\text{distance} = \int_a^b v(t)dt.\]
+we obtain the distance or length traveled by $X(t)$ during the time interval $[a,b]$:
+\[\text{length} = \int_a^b v(t)dt.\]
 
 \textbf{Example.} Let $X(t) = (\cos(t), \sin(t))$ describe a particle.
 What distance does $X(t)$ traverse from $t=0$ to $t=1$?
@@ -143,5 +143,14 @@ Note that distance and displacement are not the same thing. In the example above
 if we consider the distance traveled from $t=0$ to $t=2\pi$, the particle
 travels a distance of $2\pi$, but the net displacement is $0$ since it
 ends up where it started.
+
+Suppose $X(t) = (x_1(t), x_2(t))$. Then the length integral can be written as
+\[\int_a^b \sqrt{\left( \frac{dx_1}{dt} \right)^2+ \left( \frac{dx_2}{dt} \right)^2}dt.\]
+This might seem familiar. In fact, consider now a real-valued function $f(x)$. We can parametrize 
+the graph of $f$ from $x=a$ to $x=b$ as 
+\[X(t) = (t,f(t)),\ a\leq t \leq b.\]
+Slotting this into the integral above gives
+\[\int_a^b \sqrt{1+f'(t)^2}dt,\]
+which is the arclength formula you may have seen in Calc II.
 
 \end{document}
