@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1718213480 "/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/Calc3Notes/PartialDerivatives.tex" "PartialDerivatives.pdf" "PartialDerivatives" 1718213481 0
-  "/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/Calc3Notes/PartialDerivatives.tex" 1718213480 3732 df97e6292003223e125d4d8acf868c89 ""
+["pdflatex"] 1718215209 "/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/Calc3Notes/PartialDerivatives.tex" "PartialDerivatives.pdf" "PartialDerivatives" 1718215210 0
+  "/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/Calc3Notes/PartialDerivatives.tex" 1718215208 4145 78e5c99b4c3d7f0c84eae9cdf8476f84 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -162,9 +162,9 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1709422615 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1709422560 7883453 425cf9cde56a6b73db0d3394ac3a0367 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "PartialDerivatives.aux" 1718213481 634 18419d24bc7061cfb7acc330df93f861 "pdflatex"
-  "PartialDerivatives.out" 1718213481 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "PartialDerivatives.tex" 1718213480 3732 df97e6292003223e125d4d8acf868c89 ""
+  "PartialDerivatives.aux" 1718215210 634 ccc720d4430018ba2daeace75f896277 "pdflatex"
+  "PartialDerivatives.out" 1718215210 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "PartialDerivatives.tex" 1718215208 4145 78e5c99b4c3d7f0c84eae9cdf8476f84 ""
   (generated)
   "PartialDerivatives.aux"
   "PartialDerivatives.log"
