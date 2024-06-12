@@ -13,7 +13,7 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage{tcolorbox}
 \usepackage{physics}
-
+\DeclareMathOperator{\grd}{grad}
 \colorlet{LightGray}{White!90!Periwinkle}
 \colorlet{LightOrange}{Orange!15}
 \colorlet{LightGreen}{Green!15}
@@ -115,4 +115,13 @@ Note that $D_i f$ is itself a function that we can evaluate at points.
 \[D_2 f(x,y) = \cos(xy)x.\]
 So then 
 \[D_2 f(1,\pi) = \cos(\pi)\cdot 1 = -1.\]
+
+Notice that we can use vector notation and write the partial derivative with respect to $x_i$ as 
+\[(D_i f)(X) = \lim_{h \to 0} \frac{f(X+hE_i)-f(X)}{h}.\]
+
+The \textbf{gradient} of a function is the vector-valued function
+\[\grd f(x,y) = \left( \frac{\partial f}{\partial x}, \frac{\partial f}{\partial y} \right).\]
+One can easily generalize this definition to higher dimensions. 
+
+\textbf{Example.} Let $f(x,y,z) = x^2 y \sin(yz)$. Find $\grd f(1,1,\pi)$.
 \end{document}
