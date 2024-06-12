@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1718213391 "/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/Calc3Notes/templateNote.tex" "templateNote.pdf" "templateNote" 1718213393 0
-  "/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/Calc3Notes/templateNote.tex" 1718213391 3733 ead8e3168d6c0579e00e8de040585373 ""
+["pdflatex"] 1718213457 "/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/Calc3Notes/PartialDerivatives.tex" "PartialDerivatives.pdf" "PartialDerivatives" 1718213459 0
+  "/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/Calc3Notes/PartialDerivatives.tex" 1718213455 3733 ead8e3168d6c0579e00e8de040585373 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -162,12 +162,12 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1709422615 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1709422560 7883453 425cf9cde56a6b73db0d3394ac3a0367 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "templateNote.aux" 1718213393 634 18419d24bc7061cfb7acc330df93f861 "pdflatex"
-  "templateNote.out" 1718213393 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "templateNote.tex" 1718213391 3733 ead8e3168d6c0579e00e8de040585373 ""
+  "PartialDerivatives.aux" 1718213459 634 18419d24bc7061cfb7acc330df93f861 "pdflatex"
+  "PartialDerivatives.out" 1718213458 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "PartialDerivatives.tex" 1718213455 3733 ead8e3168d6c0579e00e8de040585373 ""
   (generated)
-  "templateNote.aux"
-  "templateNote.log"
-  "templateNote.out"
-  "templateNote.pdf"
+  "PartialDerivatives.aux"
+  "PartialDerivatives.log"
+  "PartialDerivatives.out"
+  "PartialDerivatives.pdf"
   (rewritten before read)

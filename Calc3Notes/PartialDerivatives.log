@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.2)  12 JUN 2024 12:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.2)  12 JUN 2024 12:30
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/Calc3Notes/templateNote.tex
-(/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/Calc3Notes/templateNote.tex
+**/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/Calc3Notes/PartialDerivatives.tex
+(/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/Calc3Notes/PartialDerivatives.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -521,8 +521,8 @@ Package thmtools Info: Key `name' (with value `Principle')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
 (thmtools)             that uses `style=prcpsty' on input line 31.
- (./templateNote.aux)
-\openout1 = `templateNote.aux'.
+ (./PartialDerivatives.aux)
+\openout1 = `PartialDerivatives.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
 LaTeX Font Info:    ... okay on input line 47.
@@ -596,9 +596,9 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 47.
-(./templateNote.out) (./templateNote.out)
+(./PartialDerivatives.out) (./PartialDerivatives.out)
 \@outlinefile=\write4
-\openout4 = `templateNote.out'.
+\openout4 = `PartialDerivatives.out'.
 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 60.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -609,20 +609,20 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 60.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./templateNote.aux)
-Package rerunfilecheck Info: File `templateNote.out' has not changed.
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./PartialDerivatives.aux)
+Package rerunfilecheck Info: File `PartialDerivatives.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  22626 strings out of 476025
- 420513 string characters out of 5790018
+ 420615 string characters out of 5790018
  1864388 words of memory out of 5000000
  42697 multiletter control sequences out of 15000+600000
  514899 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,5n,80p,511b,447s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 83i,5n,80p,517b,447s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on templateNote.pdf (1 page, 105600 bytes).
+Output written on PartialDerivatives.pdf (1 page, 105600 bytes).
 PDF statistics:
  68 PDF objects out of 1000 (max. 8388607)
  44 compressed objects within 1 object stream
