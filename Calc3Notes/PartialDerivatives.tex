@@ -217,6 +217,18 @@ This dicussion is all to say that we could very well take this
 to be the definition of differentiability. In words, differentiability
 at a point $x_0$ is equivalent to a function having a ``good'' linear approximation.
 Here, ``good'' means that the difference between the approximation and $f$
-shrinks faster than $|h|$.
+shrinks faster than $|h|$. This is maybe more easily seen if we write
+\[f(x+h) - \left( f(x) + ah \right) = |h|g(h)\]
+and then dividing by $|h|$.
+
+It is this definition that will be easier to adapt to the higher dimension 
+situation. We will start with two variables. Let $X=(x,y)$, $H=(h,k)$,
+so that $X+H=(x+h,y+k)$ and 
+\[f(X+H)-f(X) = f(x+h,y+k) - f(x,y).\]
+
+\textbf{Definition.} $f$ is differentiable at $X$ if the partial derivatives 
+exist and if there exists a function $g$ (defined for small $H$) 
+with $\lim_{H \to O} g(H) = 0$ such that
+\[f(X+H) - f(X) = \grd(f)\cdot H + \norm{H}g(H).\]
 
 \end{document}
