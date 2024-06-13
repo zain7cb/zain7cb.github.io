@@ -69,22 +69,16 @@ we have $|x|=\sqrt{x^2} \leq \sqrt{x^2 + y^2}$. In the same way, $|y| \leq \sqrt
 this works for more than just two variables.
 
 \section*{Limits}
-Let $f: X \to Y$ be a function taking points in $X$ to points in $Y$. In Calc I, $X$ and $Y$ were usually both $\mathbb{R}$. Now we allow $X$ to be $\mathbb{R}^2$ or $\mathbb{R}^3$.  
 
-Recall the idea of a function having a limit at a point $x_0 \in X$. Intuitively, this means there is
-some value $L$ such that when $x$ gets closer to $x_0$, $f(x)$ gets closer to this value $L$. Before we get lost 
-in technicalities, let's look at some examples of evaluating limits of multivariable functions. 
-
-\textbf{Example.} Compute 
-\[\lim_{(x,y) \to (1,\pi)} f(x,y) = \frac{x}{y} + \cos(xy).\]
-In this case, $f(x,y)$ is continuous at $(1,\pi)$, so evaluating this limit amounts to plugging in
-$(1,\pi)$, so the limit is $1/\pi + \cos(\pi) = 1/\pi -1$.
-
+Recall the idea of a function being continuous at $x_0 \in X$. Intuitively, this means that
+as $x$ gets closer to $x_0$, $f(x)$ gets closer $f(x_0)$.
 \begin{definition}
     A function $f(x,y)$ defined on a region $R$ is \textbf{continuous} at a point $(x_0,y_0) \in R$ if, 
     for every positive number $\epsilon$,  one can find a corresponding positive number $\delta_\epsilon$ such that
     $d((x_0,y_0),(x,y)) < \delta_\epsilon$ (where $(x,y) \in R$) guarantees $d(f(x,y),f(x_0,y_0)) < \epsilon$. 
 \end{definition}
+
+\textbf{Example.} Let $f(x) = 10x$.
 
 If $f(x,y)$ is real-valued (as most of our functions will be), $d(f(x,y),f(x_0,y_0))$ is the same thing as $|f(x,y) - f(x_0,y_0)|$.
 
