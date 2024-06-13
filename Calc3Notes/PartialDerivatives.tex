@@ -128,7 +128,42 @@ One can easily generalize this definition to higher dimensions.
 We note that for functions $f,g$ and any constant $c$
 \[\grd(f+g)=\grd f + \grd g,\ \grd(cf)=c \grd f.\]
 
-\section*{Differentiability and Gradient}
+\section*{Continuity, Differentiability, and Gradient}
+
+Let $x=(x_1,\ldots,x_n)$ and $y=(y_1,\ldots,y_n)$ be points. The distance
+between them is 
+\[ d(x,y)=\norm{x-y}= \sqrt{(x_1-y_1)^2+\cdots+(x_n-y_n)^2} .\]
+In the case where $n=1$ (i.e. when $x$ and $y$ are just numbers), we see
+the distance is the absolute value of the difference $x-y$ (recall that $\sqrt{x^2}=|x|$).
+
+If $a$ and $b$ are \emph{nonnegative} and $a\leq b$, then 
+$\sqrt{a} \leq \sqrt{b}$. Conversely, if $\sqrt{a} \leq \sqrt{b}$, then $a\leq b$. In particular,
+we have $|x|=\sqrt{x^2} \leq \sqrt{x^2 + y^2}$. In the same way, $|y| \leq \sqrt{x^2+y^2}$, and of course,
+this works for more than just two variables.
+
+
+Recall the idea of a function being continuous at $x_0 \in X$. Intuitively, this means that
+as $x$ gets closer to $x_0$, $f(x)$ gets closer $f(x_0)$.
+
+\textbf{Definition.} 
+A function $f(x,y)$ defined on a region $R$ is \textbf{continuous} at a point $(x_0,y_0) \in R$ if, 
+for every positive number $\epsilon$,  one can find a corresponding positive number $\delta_\epsilon$ such that
+$d((x_0,y_0),(x,y)) < \delta_\epsilon$ (where $(x,y) \in R$) guarantees $d(f(x,y),f(x_0,y_0)) < \epsilon$. 
+
+\textbf{Example.} 
+Let's look at a single variable example first. Let $f(x) = 10x$. 
+Let us show that $f$ is continuous at $0$. So let $x_0 = 0$. Then 
+$f(x_0)=f(0)=0$. Now, somebody hands us some $\epsilon > 0$, and we 
+need to respond by finding a $\delta > 0$ such that $x$ being within 
+$\delta$ of $x_0$ guarantees that $f(x)$ is within $\epsilon$ of $f(x_0)$.
+Now, 
+\[|f(x)-f(x_0)| = |10x|=10|x|,\]
+while
+\[|x-x_0|=|x|.\]
+
+Let $\delta = \epsilon/10$. Then if $d(x_0,x)=|x-x_0| < \delta$, we have
+\[|f(x)-f(x_0)| = 10|x| = 10|x-x_0| < 10(\epsilon/10)=\epsilon.\]
+This shows that $f$ is continuous at $x_0=0$.
 
 
 \end{document}
