@@ -235,6 +235,35 @@ with $\lim_{H \to O} g(H) = 0$ such that
 the partial derivatives exist and are continuous at each point of $U$.
 Then $f$ is differentiable.
 
-This theorem essentially tells us that most functions we encounter
-will be differentiable.
+Most functions we encounter will be differentiable.
+
+\section*{Repeated Partial Derivatives}
+
+Differentiation gives us a new function, and of course, we 
+can differentiate again.
+
+\textbf{Example.} Let $f(x,y) = \cos(xy)$. 
+Then $D_1 f = -y\sin(xy)$, $D_2 f = -x\sin(xy)$.
+Differentiating again, we have
+\[D_2 D_1 f = D_2 (-y\sin(xy)) = -\sin(xy) + xy \cos(xy).\]
+We also have
+\[D_1 D_2 f = D_1 (-x\sin(xy)) = -\sin(xy) + xy\cos(xy).\]
+We see they agree!
+
+\textbf{Theorem.} If $D_1f$, $D_2 f$, $D_1 D_2 f$, and $D_2 D_1 f$
+all exist and are continuous, then 
+\[D_1 D_2 f = D_2 D_1 f.\]
+This generalizes to higher derivatives as well (i.e. in practice, 
+we can always swap derivative operators around).
+
+\section*{The Chain Rule}
+
+\textbf{Example.} Let $f(x,y) = e^x \sin(xy)$. One can imagine
+this describes the temperature of the plane at each point $(x,y)$.
+Now imagine a bug moving in the plane with parametrization
+$C(t) = (t^2, t^3)$. Then the temperature the bug is feeling at time $t$
+is 
+\[f(C(t))=e^{t^2}\sin(t^5).\]
+
 \end{document}
+
