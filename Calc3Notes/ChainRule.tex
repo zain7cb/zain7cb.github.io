@@ -1,0 +1,84 @@
+\documentclass{article}
+
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{thmtools}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{framed}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{physics}
+\DeclareMathOperator{\grd}{grad}
+\colorlet{LightGray}{White!90!Periwinkle}
+\colorlet{LightOrange}{Orange!15}
+\colorlet{LightGreen}{Green!15}
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+
+\declaretheoremstyle[name=Theorem,]{thmsty}
+\declaretheorem[style=thmsty,numberwithin=section]{theorem}
+\tcolorboxenvironment{theorem}{colback=LightGray}
+
+\declaretheoremstyle[name=Proposition,]{prosty}
+\declaretheorem[style=prosty,numberlike=theorem]{proposition}
+\tcolorboxenvironment{proposition}{colback=LightOrange}
+
+\declaretheoremstyle[name=Principle,]{prcpsty}
+\declaretheorem[style=prcpsty,numberlike=theorem]{principle}
+\tcolorboxenvironment{principle}{colback=LightGreen}
+
+\setstretch{1.2}
+\geometry{
+    textheight=9in,
+    textwidth=5.5in,
+    top=1in,
+    headheight=12pt,
+    headsep=25pt,
+    footskip=30pt
+}
+
+% ------------------------------------------------------------------------------
+
+\begin{document}
+
+% ------------------------------------------------------------------------------
+% Cover Page and ToC
+% ------------------------------------------------------------------------------
+\section*{The Chain Rule}
+
+\textbf{Example.} Let $f(x,y) = e^x \sin(xy)$. One can imagine
+this describes the temperature of the plane at each point $(x,y)$.
+Now imagine a bug moving in the plane with parametrization
+$C(t) = (t^2, t^3)$. Then the temperature the bug is feeling at time $t$
+is 
+\[f(C(t))=e^{t^2}\sin(t^5).\]
+
+Of course, we could compute the derivative of this directly,
+but there's another way.
+
+\textbf{Chain Rule.} Let $f$ be differentiable on an open set $U$
+and let $C(t)$ be a differentiable curve contained in $U$. Then 
+\[\frac{d}{dt} f\circ C(t) = (\grd f)(C(t)) \cdot C'(t).\]
+
+Suppose we're in the two-variable case and 
+$C(t) = (x(t),y(t))$. We could rewrite the chain rule as
+\[\frac{d}{dt} f\circ C(t) = \frac{\partial f}{\partial x} \frac{dx}{dt} + \frac{\partial f}{\partial y} \frac{dy}{dt}\]
+where the partial derivatives are of course evaluated at $(x(t),y(t))$.
+
+\textbf{Example.} Let $f(x,y,z) = x^2 y z$ and 
+$C(t) = (x(t),y(t),z(t)) = (e^t, t, t^2)$.
+Then 
+\begin{align*}
+(f\circ C)'(t) &= (D_1 f) x'(t) + (D_2 f) y'(t) + (D_3 f) z'(t)\\
+&= 2xyz e^t + x^2 z  + x^2 y (2t)\\
+&= 2e^{2t} t^3 + e^{2t} t^2 + 2e^{2t} t^2.
+\end{align*}
+% ------------------------------------------------------------------------------
+% ------------------------------------------------------------------------------
+
+\end{document}
