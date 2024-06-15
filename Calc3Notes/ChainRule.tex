@@ -87,4 +87,18 @@ Then
 % ------------------------------------------------------------------------------
 % ------------------------------------------------------------------------------
 
+\section*{Tangent Plane}
+Let $f(x,y,z)$ be a function on $\mathbb{R}^3$. Imagine that $f$ models the 
+temperature at each point of the space and that we have
+a bug moving along a curve $B(t) = (x(t),y(t),z(t))$ in space. 
+Assume the bug started at a point with a comfortable temperature $k$
+and so decides to stick to points with temperature $k$. That is,
+the bug is moving on the level surface
+\[f(x,y,z)=k.\]
+That is, we have for all $t$ that
+\[f(B(t))=k.\]
+Applying chain rule, we have
+\[(\grd f)(B(t))\cdot B'(t) = 0.\]
+So the gradient of $f$ is perpendicular to the path of the bug
+at every point.
 \end{document}
