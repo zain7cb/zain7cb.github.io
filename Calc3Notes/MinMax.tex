@@ -67,4 +67,20 @@ Let $f$ be defined on an open set $U$. A point $P$ is called a
 neighborhood $N$ of $P$, we have 
 \[f(X) \leq f(P)\]
 for all $X \in N$.
+
+The concept of local minimum is defined similarly. 
+
+\textbf{Theorem.} Let $f$ be a differentiable function on $U$.
+Let $P$ be a local maximum. Then $P$ is a critical point of $f$.
+
+The proof of this amounts to reducing it to a one variable problem.
+If $H$ is a nonzero vector, and $t$ is small enough, then 
+$P + tH \in U$. Moreover, if $t$ is small enough, $P+tH$ will land
+in the neighborhood mentioned in the definition, so that
+\[f(P+tH) \leq f(P)\]
+for all $t$ in an interval of the form $(-\delta, \delta)$, $\delta > 0$.
+So $g(t) = f(P+tH)$ has a local maximum at $t=0$. Thus $g'(t)=0$. 
+By the chain rule, 
+\[\grd f (P) \cdot H = 0.\]
+This is true for all $H$, so we must have $\grd f (P) = 0$. $\blacksquare$
 \end{document}
