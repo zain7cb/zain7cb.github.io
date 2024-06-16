@@ -63,12 +63,14 @@ but there's another way.
 
 \textbf{Chain Rule.} Let $f$ be differentiable on an open set $U$
 and let $C(t)$ be a differentiable curve contained in $U$. Then 
-\[\frac{d}{dt} f\circ C(t) = (\grd f)(C(t)) \cdot C'(t).\]
+\[\frac{d}{dt} f\circ C(t) = (\grd f)(C(t)) \cdot C'(t).\] (Proof?
+)
 
 Suppose we're in the two-variable case and 
 $C(t) = (x(t),y(t))$. We could rewrite the chain rule as
 \[\frac{d}{dt} f\circ C(t) = \frac{\partial f}{\partial x} \frac{dx}{dt} + \frac{\partial f}{\partial y} \frac{dy}{dt}\]
 where the partial derivatives are of course evaluated at $(x(t),y(t))$.
+
 
 \textbf{Example.} Let $f(x,y,z) = x^2 y z$ and 
 $C(t) = (x(t),y(t),z(t)) = (e^t, t, t^2)$.
@@ -135,5 +137,47 @@ that the surface described by $z=g(x,y)$ is a level surface of the three-variabl
 In fact, one sees that the surface is precisely the level set corresponding to $w=0$. So a normal vector
 to the surface is given by
  \[\grd w = \left(\frac{\partial g}{\partial x}, \frac{\partial g}{\partial y},-1\right).\]
+
+
+ \section*{Directional Derivative}
+
+We aim to investigate the rate of change of a function. 
+Specifically, we're standing at some point $P$ in the domain of $f$
+and start walking in the direction of a vector $A$ and want
+to study the change in $f$. 
+
+Let $P$ be a point and $A$ a \emph{unit} vector and look at the function
+\[f(P+tA).\]
+Chain rule gives us
+\[\frac{d}{dt} f(P+tA) = \grd f (P+tA) \cdot A.\]
+Evaluating at $t=0$, the right hand side is $\grd f(P) \cdot A$.
+This leads to the definition of the directional derivative.
+
+\textbf{Definition.} The \textbf{directional derivative} of $f$
+at $P$ in the direction of $A$ is 
+\[D_A f (P)= \grd f (P) \cdot A.\]
+
+We note that for a function $z=f(x,y)$, this derivative can be 
+interpreted geometrically as the slope of a tangent to the curve
+formed by slicing the surface with the plane parallel to the $z$-axis
+and the line $P+tA$.
+
+\textbf{Example.} $f(x,y) = x^2 + y^3$, $B=(1,2)$. Find 
+$D_B f (-1,3)$.
+
+Note that $B$ is not a unit vector, so let's put 
+$\hat{B} = \frac{1}{\sqrt{5}}(1,2)$. So really we're after $D_{\hat{B}} f (-1,3)$.
+Plugging things in, have
+\[D_{\hat{B}} f (-1,3) = (2x,3y^2)\bigg\vert_{(-1,3)} \cdot \left( \frac{1}{\sqrt{5}}(1,2) \right) = 52/\sqrt{5}. \]
+
+If $P$ is a point and $A$ is a unit vector, we have
+\[D_A f (P)= \grd f (P) \cdot A = \norm{\grd f(P)}\cos\theta,\]
+where $\theta$ is the angle between $A$ and $\grd f(P)$ and $\norm{A}$
+doesn't appear since it equals 1.
+
+From this we get two interesting observations. One is that
+the gradient points in the direction of steepest increase. The other
+is that in this direction, the rate of change is $\grd f (P)$.
+Similarly, $-\grd f(P)$ points in the direction of steepest decrease.
 
 \end{document}
