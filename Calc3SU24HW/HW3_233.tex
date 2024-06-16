@@ -1,0 +1,92 @@
+\documentclass{article}
+
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{thmtools}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{framed}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{physics}
+
+\DeclareMathOperator{\grd}{grad}
+\colorlet{LightGray}{White!90!Periwinkle}
+\colorlet{LightOrange}{Orange!15}
+\colorlet{LightGreen}{Green!15}
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+
+\declaretheoremstyle[name=Theorem,]{thmsty}
+\declaretheorem[style=thmsty,numberwithin=section]{theorem}
+\tcolorboxenvironment{theorem}{colback=LightGray}
+
+\declaretheoremstyle[name=Proposition,]{prosty}
+\declaretheorem[style=prosty,numberlike=theorem]{proposition}
+\tcolorboxenvironment{proposition}{colback=LightOrange}
+
+\declaretheoremstyle[name=Principle,]{prcpsty}
+\declaretheorem[style=prcpsty,numberlike=theorem]{principle}
+\tcolorboxenvironment{principle}{colback=LightGreen}
+
+\setstretch{1.2}
+\geometry{
+    textheight=9in,
+    textwidth=5.5in,
+    top=1in,
+    headheight=12pt,
+    headsep=25pt,
+    footskip=30pt
+}
+
+% ------------------------------------------------------------------------------
+
+\begin{document}
+
+
+% ------------------------------------------------------------------------------
+
+\textbf{HW 3}
+
+\textbf{Exercise 1.}
+Sketch the level curves for the following functions (just pick a few values for $f$).
+\begin{itemize}
+    \item $f(x,y)=xy$.
+    \item $f(x,y)=(x-1)(y-2)$ (think of the relation this has with the previous function).
+    \item $f(x,y)=2x-3y$.
+\end{itemize}
+
+\textbf{Exercise 2.} Find the partial derivatives $\partial f / \partial x$, $\partial f/ \partial y$,
+and $\partial f / \partial z$ (where it applies) for the following functions.
+\begin{itemize}
+    \item $f(x,y,z) = e^{xyz}$.
+    \item $f(x,y,z) = \sin(xy) + \cos(z)$.
+\end{itemize}
+
+\textbf{Exercise 3.} Find the gradient of $f(x,y,z) = e^{3x+y} \sin(5z)$ at $(0,0,\pi/6)$.
+
+\textbf{Exercise 4.} Let $A=(a_1,a_2,a_3)$ and let $f$ be the function on $\mathbb{R}^3$ defined by
+$f(X) = A\cdot X$ (since we're in $\mathbb{R}^3$, one can write $X=(x,y,z)$). What is $\grd f$?
+
+\textbf{Exercise 5.} Let $f:\mathbb{R}^3 \to \mathbb{R}$ be defined on an open set $U$. Let $X \in U$. Suppose that we have
+a vector $A$ and a function $g(H)$ defined for all $H$ in a neighborhood of $O$ (i.e. for small $H$)
+such that
+\[f(X+H) - f(X) = A \cdot H + \norm{H}g(H).\]
+Show that $A = \grd f$. (Hint: use special values of $H$, such $hE_i$, where $h\in \mathbb{R}$ is small and 
+$E_i$ is the $i$-th standard basis vector.) (Note: the point of this exercise is to show that you actually don't need
+to assume that the partial derivatives exist in the definition of differentiability; the above
+condition already ensures they exist, and that they in fact form the components of this vector $A$.)
+
+\textbf{Exercise 6.} 
+Let $f(x,y) = e^{9x+2y}$ and $g(x,y) = \sin(4x+y)$. Suppose $C(t)$ is a differentiable curve with
+$C(0)=(0,0)$. Given:
+\[\frac{d}{dt} f(C(t)) \bigg\vert_{t=0}=2,\ \frac{d}{dt} g(C(t)) \bigg\vert_{t=0}=1.\]
+Find $C'(0)$.
+(This problem is essentially saying the following: if $f$ and $g$ are appropriately chosen functions,
+and I tell you how the values of $f$ and $g$ are changing as $C(t)$ goes through a point at time $t$,
+then you work out the direction $C(t)$ is headed at time $t$.)
+\end{document}
