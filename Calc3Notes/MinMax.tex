@@ -1,0 +1,70 @@
+\documentclass{article}
+
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{thmtools}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{framed}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{physics}
+\DeclareMathOperator{\grd}{grad}
+\colorlet{LightGray}{White!90!Periwinkle}
+\colorlet{LightOrange}{Orange!15}
+\colorlet{LightGreen}{Green!15}
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+
+\declaretheoremstyle[name=Theorem,]{thmsty}
+\declaretheorem[style=thmsty,numberwithin=section]{theorem}
+\tcolorboxenvironment{theorem}{colback=LightGray}
+
+\declaretheoremstyle[name=Proposition,]{prosty}
+\declaretheorem[style=prosty,numberlike=theorem]{proposition}
+\tcolorboxenvironment{proposition}{colback=LightOrange}
+
+\declaretheoremstyle[name=Principle,]{prcpsty}
+\declaretheorem[style=prcpsty,numberlike=theorem]{principle}
+\tcolorboxenvironment{principle}{colback=LightGreen}
+
+\setstretch{1.2}
+\geometry{
+    textheight=9in,
+    textwidth=5.5in,
+    top=1in,
+    headheight=12pt,
+    headsep=25pt,
+    footskip=30pt
+}
+
+% ------------------------------------------------------------------------------
+
+\begin{document}
+
+% ------------------------------------------------------------------------------
+% Cover Page and ToC
+% ------------------------------------------------------------------------------
+\section*{Critical Points}
+
+A point $P$ is a \textbf{critical point} of $f$ if $\grd f (P) = O$. 
+Equivalently, all the partial derivatives $D_i f$ are $0$ at $P$.
+
+\textbf{Example.} 
+Find the critical points of $f(x,y) = e^{-(x^2+y^2)}$. We take 
+partial derivatives and set them to $0$ to find the critical points.
+
+As in the single variable case, we can have a variety of 
+behaviors at a critical point; we do not necessarily have
+a local minimum or local maximum.
+
+Let $f$ be defined on an open set $U$. A point $P$ is called a
+\textbf{local maximum} of $f$ if, in some
+neighborhood $N$ of $P$, we have 
+\[f(X) \leq f(P)\]
+for all $X \in N$.
+\end{document}
