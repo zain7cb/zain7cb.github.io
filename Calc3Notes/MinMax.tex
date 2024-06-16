@@ -86,4 +86,26 @@ This is true for all $H$, so we must have $\grd f (P) = 0$. $\blacksquare$
 
 A similar argument shows that local minima are also critical points 
 of $f$.
+
+\section*{Boundary, Interior, etc.}
+
+An \textbf{open ball} of radius $r>0$ in $\mathbb{R}^n$ centered at $P$ is defined to be 
+the set of all points $X$ such that $\norm{X-P} < r$. 
+
+A \textbf{closed ball} is similarly defined except $\norm{X-P} \leq r$ (rather than strict inequality).
+
+A subset $U \subseteq \mathbb{R}^n$ is \textbf{open} if at every point $P \in U$, there is a ball of some radius around $P$
+contained entirely in $U$.
+
+An \textbf{interior point} $P$ of a set $S \subseteq \mathbb{R}^n$ is one such there exists a ball
+of some radius around $P$ contained entirely in $S$. Thus one could rephrase the definition of openness
+as each point being an interior point.
+
+A point $P$ (not necessarily in $S$) is called a \textbf{boundary point} of $S$ if every open ball around 
+$P$ contains both a point in $S$ and a point not in $S$.
+
+A set is \textbf{closed} if it contains all of its boundary points.
+
+A set is \textbf{bounded} if one can fit the set inside a ball. Equivalently, $S$ is bounded
+if there is some $b>0$ such that $\norm{X} \leq b$ for all $X\in S$.
 \end{document}
