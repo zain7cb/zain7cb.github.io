@@ -92,10 +92,13 @@ of $f$.
 An \textbf{open ball} of radius $r>0$ in $\mathbb{R}^n$ centered at $P$ is defined to be 
 the set of all points $X$ such that $\norm{X-P} < r$. 
 
+
 A \textbf{closed ball} is similarly defined except $\norm{X-P} \leq r$ (rather than strict inequality).
 
 A subset $U \subseteq \mathbb{R}^n$ is \textbf{open} if at every point $P \in U$, there is a ball of some radius around $P$
 contained entirely in $U$.
+
+Note that open balls are indeed open sets.
 
 An \textbf{interior point} $P$ of a set $S \subseteq \mathbb{R}^n$ is one such there exists a ball
 of some radius around $P$ contained entirely in $S$. Thus one could rephrase the definition of openness
@@ -132,5 +135,36 @@ parametrizations into $f$.
 This function goes to $0$ as the distance from the origin goes
 to $\infty$. This implies that the function indeed achieves a
 maximum (as a result of the above theorem).
+
+\section*{Lagrange Multipliers}
+
+Now suppose we are trying to find minima and maxima of a function
+$f:\mathbb{R}^n \to \mathbb{R}$, but have the added constraint
+that we can only plug in points lying on the curve/surface $g(X)=0$
+where $g$ is some other function.
+
+\textbf{Theorem.} Let $f$ and $g$ be differentiable functions on $U$ with
+continuous partial derivatives. Let $S$ be the set of points $X$
+where $g(X)=0$ and $\grd g(X) \neq O$. Suppose that $P$ is 
+an extremum of $f$ on $S$. Then there is some number $\lambda$ such that
+\[\grd f(P) = \lambda \grd g(P).\]
+
+To get a sense of why this is true, let $X(t)$ be a 
+differentiable curve passing through $P$, say $X(t_0)=P$.
+Then $f(X(t))$ has a maximum or minimum at $t_0$. So 
+\[\frac{d}{dt} f(X(t)) \bigg\vert_{t_0} =0.\]
+But the chain rule implies
+\[0=\frac{d}{dt} f(X(t)) \bigg\vert_{t_0} = \grd f(P) \cdot X'(t_0).\]
+So $\grd f(P)$ is perpendicular to every curve on the surface
+passing through $P$. In other words, $\grd f(P)$ and $\grd g(P)$
+are both perpendicular to the surface $g(X)=0$ at the point $P$.
+So one is a multiple of the other.
+
+This theorem gives us a way of finding the extrema of $f$ subject to
+a constraint. The theorem says that if you have an extreme value,
+this equation involving the gradients must hold. So one can solve this equation
+to get a list of points that are candidates for the extreme values and then figure out the
+max and min by inspection. In other words, the theorem says, 
+``If there are any extreme values, this is where they would have to be.''
 
 \end{document}
