@@ -188,7 +188,7 @@ Recall that for single variable smooth function $f$, Taylor's theorem gives us
 \[f(a+h) = f(a) + f'(a)h + \frac{f''(a)}{2} h^2 + R_3,\]
 where $R_3 = \frac{f^{(3)}(c)}{3!}h^3$ for some number $c$ between $a$ and $a+h$.
 
-Let's see how to carry this over to two-variable functions. Let $P=(p_1,p_2)$ and $H=(h,k)$, and assume
+Let's see how to carry this over to two-variable functions. Let $P=(x_0,y_0)$ and $H=(h,k)$, and assume
 that $P \in U$ for some open set $U$ on which $f$ is defined with continuous partial derivatives up to order $3$.
 We want to obtain a similar expansion to the one above. Define 
 \[g(t) = f(P+tH),\ t \in [0,1].\]
@@ -217,6 +217,68 @@ Putting it all together and substituting $t=0$, we get
     &+ R^3.
 \end{align*}
 
+If we write $P=(x_0,y_0)$ and use a slightly different notation, we get
+\begin{align*}
+    f(x_0+h,y_0+k) - f(x_0,y_0) &= f_{x}h + f_{y}k\\
+    &+\frac{1}{2}\left[ f_{xx} h^2 + 2f_{xy}hk + f_{yy}k^2 \right]\\
+    &+R_3
+\end{align*}
+where all the derivatives are understood to be evaluated at $P$.
+
+Notice that at a critical point (i.e. where $f_x=f_y=0$), the 
+first order terms drop off, and so the behavior of the function 
+is essentially determined by the term
+\[Q(h,k) := ah^2 + 2bhk + ck^2\]
+where $a = f_{xx}(P)$, $b=f_{xy}(P)$, $c=f_{yy}(P)$.
+Thus examining this \textbf{quadratic form} $Q$ will reveal the local min/max
+behavior of the function at the point $P$. Note that if $a,b,c$ are
+all $0$, we're in a tough spot, because then we would have to look at the
+cubic terms in Taylor's formula, which is no fun. So we assume at 
+least one of $a,b,c$ is nonzero.
+
+
+\section*{Quadratic Forms}
+
+As above let 
+\[Q(x,y) = ax^2 + 2bxy + cy^2.\]
+
+A quadratic form of the type above is said to be \textbf{definite} if 
+it attains values of one sign only (either all positive or all negative), 
+except at $(0,0)$, where $Q$ is of course $0$. $x^2 + y^2$ is an easy example.
+
+$Q(x,y)$ is \textbf{indefinite} if it can assume values of both signs. 
+$xy$ is such an example.
+
+$Q(x,y)$ is \textbf{semi-definite} if it vanishes for values other 
+than $(x,y)=(0,0)$ but otherwise only takes values of one sign. 
+$(x-y)^2$ is an example of this.
+
+Now, if $a=c=0$, our form is $2bxy$ which is indefinite. 
+So suppose one of $a$ or $c$ is nonzero. Suppose for concreteness
+that $a \neq 0$. Then 
+\[Q(x,y) = a \left[ {\left( x + \frac{b}{a}y \right)}^2 +\frac{ca-b^2}{a^2}y^2\right].\]
+If $ca-b^2>0$, our form is definite (why?). If $ca-b^2 < 0$, it is indefinite.
+If $ca-b^2=0$ it is semidefinite.
+
+If $a>0$, then the definite and semidefinite cases yield a local min
+for $Q(x,y)$. The indefinite case yields a saddle point. If $a<0$, then
+we have the same except replace the word max with max.
+
+The semidefinite case is much harder to analyze. For instance, suppose a function
+has the Taylor expansion $f(x_0,y_0)= (h-k)^2 + k^3$. Although the corresponding
+quadratic form has a local min, the $x^3$ term complicates things. In general,
+the semidefinite case requires one to look at the higher order terms, so we put this case aside
+for now.
+
+\textbf{Example.} $Q(x,y) = 3x^2 - 4xy - 4y^2$. 
+We may complete the square and write this as 
+\[Q(x,y) = 3 \left[ \left( x - \frac{2}{3}y \right)^2 - \frac{16}{9}y^2 \right].\]
+So $Q$ is indefinie.
+
+\textbf{Example.} $Q(x,y) = -3x^2 + 5xy - 7y^2$. We can complete the square
+to get 
+\[Q(x,y) = -3 \left[ \left( x - \frac{5}{6}y \right)^2 + \left( -\frac{25}{36} + \frac{7}{3} \right)y^2  \right].\]
+Thus $Q$ has a local max at the origin.
 
 
 
