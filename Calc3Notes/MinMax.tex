@@ -185,11 +185,16 @@ latter, where $f$ has the value $2/\sqrt{2}$.
 \section*{Taylor's Theorem Revisited}
 
 Recall that for single variable smooth function $f$, Taylor's theorem gives us 
-\[f(a+h) = f(a) + f'(a)h + \frac{f''(a)}{2} h^2 + \frac{f^{(3)}(c)}{3!}h^3,\]
-where $c$ is some number between $a$ and $a+h$.
+\[f(a+h) = f(a) + f'(a)h + \frac{f''(a)}{2} h^2 + R_3,\]
+where $R_3 = \frac{f^{(3)}(c)}{3!}h^3$ for some number $c$ between $a$ and $a+h$.
 
-Let's see how to carry this over to two-variable functions. Let $P=(p_1,p_2)$ and $H=(h,k)$.
-We want to obtain a similar expansion to the one above.
+Let's see how to carry this over to two-variable functions. Let $P=(p_1,p_2)$ and $H=(h,k)$, and assume
+that $P \in U$ for some open set $U$ on which $f$ is defined with continuous partial derivatives up to order $3$.
+We want to obtain a similar expansion to the one above. Define 
+\[g(t) = f(P+tH),\ t \in [0,1].\]
+Assume that $P+tH \in U$ for all $t \in [0,1]$. We note that $g(0) = f(P)$, $g(1) = f(P+H)$. 
+Then $g(t)$ is differentiable (by chain rule), and we can apply the single-variable Taylor's theorem:
+\[g(1) = g(0) + g'(0) + \frac{g''(0)}{2}+R_3.\]
 
 
 
