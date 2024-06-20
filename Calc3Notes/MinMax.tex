@@ -195,7 +195,27 @@ We want to obtain a similar expansion to the one above. Define
 Assume that $P+tH \in U$ for all $t \in [0,1]$. We note that $g(0) = f(P)$, $g(1) = f(P+H)$. 
 Then $g(t)$ is differentiable (by chain rule), and we can apply the single-variable Taylor's theorem:
 \[g(1) = g(0) + g'(0) + \frac{g''(0)}{2}+R_3.\]
+Here, we're using a value of $h=1$. So our remainder $R_3$ has the form
+\[R_3 = \frac{1}{3!} g^{(3)}(\tau),\]
+where $\tau$ lies between $0$ and $1$.
 
+Now we have
+\[g'(t) = \grd f(P+tH)\cdot H = D_1 f(P+tH)h + D_2 f(P+tH)k,\]
+which comes from the chain rule and then writing things out in coordinates.
+For $t=0$, this yields
+\[g'(0) = D_1 f(P) h + D_2 f(P)k.\]
+
+Let's rewrite $g'(t)$ as 
+\[g'(t) = f_1(P+tH),\ f_1 = hD_1 f(P+tH) + kD_2 f(P+tH).\]
+We can then apply chain rule once more as 
+\[g''(t) = hD_1f_1(P+tH) + kD_2f_1(P+tH)=\left( h^2 D_1^2 f + 2hkD_1 D_2 f + k^2 D_2^2 f \right)\bigg\vert_{P+tH}.\]
+
+Putting it all together and substituting $t=0$, we get
+\begin{align*}
+    f(P+H)=f(P) &+ D_1f(P)h + D_2 f(P)k \\
+    &+ \frac{1}{2}\left[ D_1^2 f(P)h^2 + 2D_1D_2f(P)hk + D_2^2 f(P) k^2\right]\\
+    &+ R^3.
+\end{align*}
 
 
 
