@@ -225,6 +225,13 @@ If we write $P=(x_0,y_0)$ and use a slightly different notation, we get
 \end{align*}
 where all the derivatives are understood to be evaluated at $P$.
 
+Note also that if we write $X=P+H$, we can write the above as 
+\begin{align*}
+    f(x,y) - f(x_0,y_0) &= f_x(P) (x-x_0) + f_y(P) (y-y_0) \\
+    &+ \frac{1}{2}[f_{xx}(P) (x-x_0)^2 + 2f_{xy}(P)(x-x_0)(y-y_0)+f_{yy}(P)(y-y_0)^2]\\
+    &+ R_3
+\end{align*}
+
 Notice that at a critical point (i.e. where $f_x=f_y=0$), the 
 first order terms drop off, and so the behavior of the function 
 is essentially determined by the term
@@ -235,6 +242,8 @@ behavior of the function at the point $P$. Note that if $a,b,c$ are
 all $0$, we're in a tough spot, because then we would have to look at the
 cubic terms in Taylor's formula, which is no fun. So we assume at 
 least one of $a,b,c$ is nonzero.
+
+
 
 
 \section*{Quadratic Forms}
@@ -281,6 +290,47 @@ to get
 Thus $Q$ has a local max at the origin.
 
 
+\section*{The Quadratic Form Associated to a Critical Point}
 
+As we mentioned earlier, at a critical points, the behavior of $f$ 
+is determined by the quadratic terms. We now establish the notion of a 
+quadratic form associated to a critical point, which is simply the quadratic
+form you get by extracting the second-order terms in the Taylor expansion.
 
+\textbf{Theorem.} Let $P$ be a critical point of $f$, and suppose that
+the associated quadratic form $q(h,k)$ is definite or indefinite (so we exclude 
+the semidefinite case). Then $f$ has a local maximum, minimum, or 
+saddle point according to the behavior of the associated form $q(h,k)$.
+
+\textbf{Example.} Let 
+\[f(x,y) = \log(1+x^2+y^2).\]
+We aim to find and classify the critical points. We have 
+\[f_{x} = \frac{2x}{1+x^2+y^2},\ f_{y} = \frac{2y}{1+x^2+y^2}.\]
+So have one critical point $P = (0,0)$. To get the associated quadratic
+form, we have to take some derivatives.
+\begin{align*}
+    f_{xx} &= \frac{2(1+x^2+y^2) - (2x)(2x)}{(1+x^2+y^2)^2},\\
+    f_{yy} &= \frac{2(1+x^2+y^2) - (2y)(2y)}{(1+x^2+y^2)^2},\\
+    f_{xy} &= \frac{-(2x)(2y)}{(1+x^2+y^2)^2}.
+\end{align*}
+Evaluating at $(0,0)$, we find the associated quadratic form is 
+\[2x^2 + 2y^2.\]
+One sees by inspection of this form that $(0,0)$ is a local minimum. 
+
+\textbf{Example.} Let 
+\[f(x,y) = x - x^3y + y^2.\]
+First, we compute the first derivatives 
+\[f_x = 1 - 3x^2y,\ f_y = -x^3 + 2y.\]
+Setting these equal to $0$ and solving gives one critical point $P$
+at
+\[ \left( \left(\frac{2}{3}\right)^{1/5}, \frac{1}{2} \left(\frac{2}{3}\right)^{3/5} \right). \]
+And now we compute more derivatives and hopefully survive the process.
+\[ f_{xx} = -6xy,\ f_{yy} = 2,\ f_{xy} = -3x^2.\]
+Evaluating at our critical point and computing the associated form yields
+\[q(h,k) = -3 \left( \frac{2}{3} \right)^{4/5} h^2 - 6\left( \frac{2}{3} \right)^{2/5}hk + 2k^2.\]
+Rearranging things a little yields
+\[q(h,k) = -3  \left( \frac{2}{3} \right)^{4/5} \left[ \left( h
+ + \left( \frac{2}{3} \right)^{-2/5} k \right)^2 
+ - \left( \frac{4}{3} \left( \frac{2}{3} \right)^{-4/5} \right) k^2 \right].\]
+ We see this form is indefinite, and we conclude that $P$ is a saddle point.
 \end{document}
