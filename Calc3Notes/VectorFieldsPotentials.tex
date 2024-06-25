@@ -94,4 +94,34 @@ Finally, using $F = -\grd \psi$, we see these terms cancel each other out.
 So far, we have seen scalar-valued functions, curves in space, and vector fields. Do not confuse these notions, warns
 Lang.
 
+Are potentials unique? The role of a potential is somewhat similar to the role of an antiderivative
+in single variable calculus. There we learned an antiderivative is unique up to a constant. That is,
+if $F$ and $G$ are two antiderivatives of $f$, then $F = G + C$ for some constant $C$. Well, there's a 
+slight technicality. Consider the following functions 
+\[g(x) = 1/x\]
+and
+\[f(x) = \begin{cases}
+    1/x + 2,\ x>0\\
+    1/x - 3,\ x<0.
+\end{cases}\]
+Then $f$ and $g$ have the same derivative, but they do not differ by a constant. The issue here is that
+the domain of $f$ and $g$, which is $\mathbb{R} \setminus \{0\}$, is not \textbf{connected}.
+So the more precise statement is that antiderivatives are unique up to a constant when the domain is connected.
+
+The definition we'll take is the following: an open subset $U \subset \mathbb{R}^n$ is \textbf{connected} if 
+between any two points in $U$, there is a differentiable path that joins them. More precisely,
+if $P$ and $Q$ lie in $U$, then there is a differentiable curve $X(t)$ such that $X(t_0) = P$ and
+$X(t_1) = Q$ for some $t_0,t_1$.
+
+\textbf{Theorem.} If $U$ is an open connected subset of $\mathbb{R}^n$ and $f,g$ are differentiable with 
+$\grd f(X) = \grd g(X)$ for each $X \in U$, then there exists a constant $k$ such that 
+\[f(X) = g(X) + k\]
+for all $X \in U$.
+
+To prove this, let $\varphi(X) = f(X) - g(X)$. Then $\grd \varphi (X) = 0$ for all $X \in U$. Now let
+$P,Q \in U$. There is some differentiable curve $X(t)$ connecting $P$ to $Q$. On the other hand,
+\[\frac{d}{dt} \varphi(X(t)) = \grd\varphi(X(t))\cdot X'(t).\]
+But $\grd \varphi (X) = 0$ for all $X \in U$. Thus this derivative is $0$, meaning $\varphi$ is constant
+on the path $X(t)$, which implies $\varphi(P) = \varphi(Q)$. This means $\varphi$ is constant on $U$.
+
 \end{document}
