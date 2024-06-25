@@ -1,0 +1,97 @@
+\documentclass{article}
+
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{thmtools}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{framed}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{physics}
+\DeclareMathOperator{\grd}{grad}
+\colorlet{LightGray}{White!90!Periwinkle}
+\colorlet{LightOrange}{Orange!15}
+\colorlet{LightGreen}{Green!15}
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+
+\declaretheoremstyle[name=Theorem,]{thmsty}
+\declaretheorem[style=thmsty,numberwithin=section]{theorem}
+\tcolorboxenvironment{theorem}{colback=LightGray}
+
+\declaretheoremstyle[name=Proposition,]{prosty}
+\declaretheorem[style=prosty,numberlike=theorem]{proposition}
+\tcolorboxenvironment{proposition}{colback=LightOrange}
+
+\declaretheoremstyle[name=Principle,]{prcpsty}
+\declaretheorem[style=prcpsty,numberlike=theorem]{principle}
+\tcolorboxenvironment{principle}{colback=LightGreen}
+
+\setstretch{1.2}
+\geometry{
+    textheight=9in,
+    textwidth=5.5in,
+    top=1in,
+    headheight=12pt,
+    headsep=25pt,
+    footskip=30pt
+}
+
+% ------------------------------------------------------------------------------
+
+\begin{document}
+
+% ------------------------------------------------------------------------------
+% Cover Page and ToC
+% ------------------------------------------------------------------------------
+\section*{Conservation of Energy}
+Let $U \subset \mathbb{R}^n$ be an open set. A \textbf{vector field} $F$ on $U$ is a map 
+$F: U \to \mathbb{R}^n$. So $F$ maps points to vectors with the same dimension. 
+One thinks of vectors fields as a field of arrows attached to each point of $U$. 
+
+A very simple example of a vector field is the gravitational field 
+\[G(x,y,z) = (0,0,-g).\]
+This is really an approximation of the field if we're close enough to 
+Earth's surface. One imagines a bunch of arrows pointing downward. 
+If we introduce a point mass $m$ into the
+field, the mass feels a force of $mG = (0,0,-gm)$. 
+
+If $F$ is a vector field and there exists some (scalar-valued) function $f$ such that
+\[\grd f = F\]
+then $f$ is said to be \textbf{conservative}. The function $f$ is called a \textbf{potential} function
+for $F$. For technical reasons in physics, sometimes the definition uses
+$-\grd f$ instead, and we note that $-\grd f = \grd(-f)$, so there's no real difference.
+
+Suppose a particle of mass $m$ moves in $U$ on which a field of forces $F: U \to \mathbb{R}^3$ is defined.
+That is, $F(x,y,z)$ is the force the particle is experiencing if it is positioned at $(x,y,z)$.
+Let $C(t)$ be a parametrization of the particle's path. Then Newton's law says that the force acting on the 
+particle is equal to the mass times its acceleration:
+\[F(C(t)) = mC''(t).\]
+
+The \textbf{kinetic energy} of a particle is 
+\[\frac{1}{2} m \norm{C'(t)}^2.\]
+
+\textbf{Conservation Law.} Suppose that $F$ is a conservative vector field and $\psi$ satisfies
+$F = -\grd \psi$. That is, $\psi$ is the potential energy of the system. Suppose a particle of mass $m$ moves 
+(according to Newton's law) where this field is defined and that the field is the only force acting on the particle. 
+Then the sum of potential and kinetic energy is constant.
+
+We differentiate
+\[ \psi(C(t)) +  \frac{1}{2} m \norm{C'(t)}^2\]
+with respect to $t$ to obtain 
+\[ \grd\psi(C(t))\cdot C'(t) + m C'(t) \cdot C''(t). \]
+Applying Newton's law, this becomes
+\[ \grd\psi(C(t))\cdot C'(t) + C'(t) \cdot F(C(t)). \]
+Finally, using $F = -\grd \psi$, we see these terms cancel each other out.
+
+\section*{Potential Functions}
+
+So far, we have seen scalar-valued functions, curves in space, and vector fields. Do not confuse these notions, warns
+Lang.
+
+\end{document}
