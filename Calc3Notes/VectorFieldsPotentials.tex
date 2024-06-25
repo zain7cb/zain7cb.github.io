@@ -142,6 +142,23 @@ still not certain that a potential exists.
 
 \textbf{Example.} Let $F(x,y) = (x^2 y, \sin(xy))$. We can verify that $F$ does not admit a potential.
 
+\section*{Local Existence of Potential Functions}
 
+\textbf{Theorem.} (two-variable case) Let $f$ and $g$ be differentiable real valued functions on an open set $U$ of the plane.
+If $U$ is either the entire plane or a rectangle and 
+\[\frac{\partial g}{\partial x}=\frac{\partial f}{\partial y},\]
+then the vector field $F(x,y) = (f(x,y),g(x,y))$ has a potential.
+
+\textbf{Example.} Let $F = (2xy, x^2 + 3y^2)$ on $U = \mathbb{R}^2$. If we let $f$ and $g$ be the first and second
+component functions respectively, then $D_1 g = 2x = D_2 f$. So the above theorem asserts a potential exists.
+We can find it by integration. A potential $\varphi$ must satisfy
+\[\frac{\partial \varphi}{\partial x} = 2xy.\]
+We can integrate with respect to $x$ to get 
+\[\varphi = x^2y + u(y)\]
+where $u$ is some function of $y$. We know also that 
+\[\frac{\partial \varphi}{\partial y} = x^2 + 3y^2 = x^2 + u'(y).\]
+This implies $u'(y) = 3y^2$. So we can for instance take $u(y) = y^3$ and let
+\[\varphi(x,y) = x^2y + y^3.\]
+We see $\varphi$ is a potential for $F$.
 
 \end{document}
