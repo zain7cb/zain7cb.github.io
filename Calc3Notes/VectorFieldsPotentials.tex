@@ -124,4 +124,19 @@ $P,Q \in U$. There is some differentiable curve $X(t)$ connecting $P$ to $Q$. On
 But $\grd \varphi (X) = 0$ for all $X \in U$. Thus this derivative is $0$, meaning $\varphi$ is constant
 on the path $X(t)$, which implies $\varphi(P) = \varphi(Q)$. This means $\varphi$ is constant on $U$.
 
+In the two variable case, a vector field takes the form 
+\[F(x,y) = (f(x,y), g(x,y)).\]
+A potential function $\varphi$ would then (by definition) satisfy the equations
+\[\frac{\partial \varphi}{\partial x} = f,\ \frac{\partial \varphi}{\partial y} = g.\]
+So if we have this potential, then 
+\[ \frac{\partial}{\partial y}\left(\frac{\partial \varphi}{\partial x} \right) = \frac{\partial f}{\partial y}. \]
+We also have by the other equation that 
+\[ \frac{\partial}{\partial x}\left(\frac{\partial \varphi}{\partial y} \right) = \frac{\partial g}{\partial x}.\]
+On the other hand, our theorem about mixed derivatives says that $D_1 D_2 = D_2 D_1$. Thus we come to a 
+necessary condition for a potential to exist:
+\[\frac{\partial g}{\partial x}=\frac{\partial f}{\partial y}\ (*).\]
+This gives a quick test to determine whether a vector field \emph{does not} admit a potential. If the above
+equation doesn't hold, then there is no possibility for a potential to exist. The converse is only
+true under certain conditions. In other words, if you check the above condition and it holds, it's
+still not certain that a potential exists.
 \end{document}
