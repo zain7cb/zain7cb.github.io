@@ -177,5 +177,31 @@ you'll see that they hold. So we integrate the first component to see that
 \[\varphi(x,y,z) = \sin(xy) + \psi(y,z)\]
 where $\psi(y,z)$ is some function yet to be determined.
 
+\section*{Functions Depending Only on the Distance from the Origin}
+
+Some functions only depend on the distance to the origin. The easiest example of such a function is
+\[r(x,y)=\sqrt{x^2+y^2},\]
+which \emph{is} the function that maps a point to its distance from the origin. In $\mathbb{R}^3$ the corresponding
+function would be $r(x,y,z) = \sqrt{x^2+y^2+z^2}$. In $\mathbb{R}^n$ it would be
+$r(x_1,\ldots,x_n) = \sqrt{x_1^2 + \cdots + x_n^2}$. In the two-variable case, we have
+\[  \frac{\partial r}{\partial x} = \frac{x}{\sqrt{x^2+y^2}} = \frac{x}{r}.\]
+A similar computation shows $\partial r/\partial x = y/r$, so that 
+\[ \grd r = \left( \frac{x}{r} , \frac{y}{r}\right) = \frac{1}{r} (x,y).\]
+If we set $X = (x,y)$, then this reads
+\[ \grd r = \frac{1}{r} X.\]
+The same computation works in $n$ dimensions, so the above holds in general.
+
+\textbf{Example.} Let $f(x,y) = \sin(r) = \sin(\sqrt{x^2+y^2})$. Then 
+\[\frac{\partial f}{\partial x} = \cos(r) \frac{x}{\sqrt{x^2+y^2}}=\frac{\cos(r)}{r} x,\ \frac{\partial f}{\partial y} = \cos(r) \frac{y}{\sqrt{x^2+y^2}} = \frac{\cos(r)}{r}y.\]
+So we see that
+\[\grd f(X) = \frac{\cos(r)}{r} X.\]
+
+In general, a function depending only on the radius can be written $f=g(r)$, where $g: \mathbb{R}_{\geq 0} \to \mathbb{R}$.
+Bear in mind that $r$ itself is still a function of $(x_1, \ldots, x_n)$, so $f=g(r)$ is a function is a function
+from $\mathbb{R}^n$ to $\mathbb{R}$. Observe that (take $n=3$ for concreteness)
+\[ \frac{\partial f}{\partial x} = g'(r) \frac{x}{\sqrt{x^2+y^2+z^2}} = \frac{g'(r)}{r} x.\]
+Similar computations hold for $D_2$ and $D_3$, and so we have
+\[ \grd f(X) = \frac{g'(r)}{r} X.\]
+
 
 \end{document}
