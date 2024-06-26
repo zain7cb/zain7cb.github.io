@@ -22,7 +22,7 @@
 
 \declaretheoremstyle[name=Theorem,]{thmsty}
 \declaretheorem[style=thmsty,numberwithin=section]{theorem}
-\tcolorboxenvironment{theorem}{colback=LightGray}
+%\tcolorboxenvironment{theorem}{colback=LightGray}
 
 \declaretheoremstyle[name=Proposition,]{prosty}
 \declaretheorem[style=prosty,numberlike=theorem]{proposition}
@@ -160,5 +160,22 @@ where $u$ is some function of $y$. We know also that
 This implies $u'(y) = 3y^2$. So we can for instance take $u(y) = y^3$ and let
 \[\varphi(x,y) = x^2y + y^3.\]
 We see $\varphi$ is a potential for $F$.
+
+
+\textbf{Theorem.}
+Suppose $F = (f_1, f_2, f_3)$ is a vector field defined on an open rectangular box with differentiable components that have
+continuous partial derivatives. If 
+\[D_i f_j = D_j f_i\]
+for all indices $i$ and $j$, then $F$ has a potential function.
+The above condition means $D_1 f_2 = D_2 f_1$, $D_1 f_3 = D_3 f_1$, and $D_2 f_3 = D_3 f_2$.
+The same theorem holds in higher dimensions.
+
+\textbf{Example.} Find a potential for the vector field (defined on 3-space)
+\[ F(x,y,z) = (y\cos(xy), x\cos(xy) + 2yz^3, 3y^2z^2).\]
+If you check the conditions on the derivatives as stated in the theorem,
+you'll see that they hold. So we integrate the first component to see that 
+\[\varphi(x,y,z) = \sin(xy) + \psi(y,z)\]
+where $\psi(y,z)$ is some function yet to be determined.
+
 
 \end{document}
