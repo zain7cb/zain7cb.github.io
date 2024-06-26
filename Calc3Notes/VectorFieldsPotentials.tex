@@ -205,5 +205,50 @@ Similar computations hold for $D_2$ and $D_3$, and so we have
 
 \section*{Gravity}
 
+Newton's law of gravitation says that the gravitational 
+force between two bodies is given by 
+\[\frac{G m_1 m_2}{r^2}.\]
+The equal and opposite forces point towards each other.
+Imagine that $m_1$ is positioned at the origin and $m_2$ elsewhere.
+The position vector $X$ of $m_2$ points at $m_2$. If we want to model
+the force that $m_2$ is feeling, we need a vector pointing towards the origin.
+$-X$ does this. It is desirable to work with unit vectors, since
+for a unit vector $A$, $\norm{cA} = |c| \norm{A}$. $\norm{X} = r$, so we have
+\[F(X) = \frac{-G m_1 m_2}{r^2} \frac{X}{r} = \frac{-G m_1 m_2}{r^3}X\]
+as the force $F$ acting on $m_2$. To find a potential for $f$, we 
+use the above formula and set
+\[\frac{g'(r)}{r}= \frac{-G m_1 m_2}{r^3},\]
+which after solving gives
+\[g(r) = \frac{G m_1 m_2}{r}\]
+as a potential. The potential energy of $m_2$ is then
+\[ \psi = -g(r) = \frac{-G m_1 m_2}{r}.\]
+
+
+\section*{A Special Vector Field}
+Let 
+\[G(x,y) =\left( \frac{-y}{x^2+y^2} , \frac{x}{x^2+y^2}  \right).\]
+To get a sense of what this field looks like, let's use polar coordinates. Fix a radius $r$
+and vary $\theta$. Substituting $x=r\cos\theta$ and $y=r\sin\theta$, we have
+\[G(x,y) = \frac{1}{r} (-\sin \theta, \cos \theta).\]
+On the other hand, the velocity of $C(t) = (r\cos(t),r\sin(t))$ is
+$C'(t) = (-r\sin(t), r\cos(t))$, so the velocity of this circular trajectory
+is parallel to $G(x,y)$. So our vector field circulates around the origin,
+and the magnitudes shrink as the radius increases. For small radius,
+the magnitude is large, and it blows up as we approach the origin, where the
+vector field is undefined.
+
+We note that $D_2 f = D_1 g$ is satisfed for this vector field. So on any rectangle
+not containing the origin, we can find a potential function.
+One can verify that 
+\[\varphi(x,y) = \arctan(y/x)\]
+is a potential defined on any rectangle that doesn't meet the line $x=0$.
+Geometrically, this is saying that potential is given by the angle of the point.
+
+In fact, if we delete a small sector near the positive $x$ axis and define $\varphi(x,y) = \theta$,
+this is a potential for $G$. Here, $\theta$ ranges in $[0,2\pi - c]$
+for any small $c>0$.
+
+We'll see later why one cannot define a potential on all
+of $\mathbb{R}^2 \setminus \{0\}$.
 
 \end{document}
