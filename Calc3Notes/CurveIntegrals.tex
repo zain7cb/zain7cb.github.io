@@ -59,5 +59,29 @@ equation still assumes a straight-line displacement and constant force in a fixe
 What if our trajectory is a curve $C(t)$ and the force is a vector quantity $F(X)$ that depends
 on position?
 
+If one zooms in close enough on a continuous vector field, it looks
+constant, and similarly a curve will look like a straight line segment.
+The work done by the force on a small time interval $(t, t + \Delta t)$ can then be approximated as 
+\[F(C(t))\cdot (C(t+\Delta t)-C(t)).\]
+We can rewrite this as 
+\[F(C(t))\cdot \frac{C(t+\Delta t) - C(t)}{\Delta t}\Delta t.\]
+If we add up these small bits of work and let $\Delta t \to 0$, we end
+up with an integral.
 
+Thus we define the \textbf{integral of $F$ along $C$} from time $a$ to time $b$ as 
+\[\int_C F = \int_a^b F(C(t))\cdot \frac{dC}{dt} dt.\]
+
+\textbf{Example.} $F(x,y) = (x^2y, y^3)$. Find the integral along the straight line
+from $(0,0)$ to $(1,1)$.
+
+We take $C(t) = (t,t)$, $0 \leq t \leq 1$. $C'(t) = (1,1)$. Then 
+\[F(C(t)) = (t^3,t^3).\]
+Our integral is then
+\[\int_0^1 (t^3,t^3)\cdot (1,1)dt = \int_0^1 2t^3 dt = 1/2.\]
+
+In $2$-space, if we write $F = (f,g)$, $C(t) = (x(t),y(t))$, then the curve integral
+can be expressed
+\[\int_C F = \int_C fdx + gdy.\]
+Symbolically, the expression $fdx + gdy = (f,g)\cdot (dx,dy)$. So one can write
+\[\int_C F = \int_a^b \left[ f(x(t),y(t))\frac{dx}{dt} + g(x(t),y(t))\frac{dy}{dt}\right]dt.\]
 \end{document}
