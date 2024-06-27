@@ -95,5 +95,44 @@ curve will be the same.
 We can parametrize our curve as $C(t) = (t^2, t)$, $-1 \leq t \leq 1$. The integral is then
 \[\int_C F \cdot dC = \int_{-1}^1 f(C(t))\cdot C'(t)dt = \int_{-1}^1(t^4,t^3)\cdot(2t+1)dt = \int_{-1}^1 (2t^5 + t^3)dt.\]
 
+\textbf{Example.} Let 
+\[G(x,y) = \left( \frac{-y}{x^2+y^2}, \frac{x}{x^2+y^2} \right).\]
+Integrate $G$ on the circle of radius $3$ centered at the origin from $(3,0)$ to $(3\sqrt{3}/2, 3/2)$.
 
+We can parametrize the curve $C$ as $C(t) = (3\cos t, 3\sin t)$ where $0 \leq t \leq \pi/6$, so that 
+$C'(t) = 3(-\sin t, \cos t)$. Now,
+\[G(C(t)) = \left(\frac{-3\sin t}{9}, \frac{3\cos t}{9}\right) = \frac{1}{3}(-\sin t, \cos t).\]
+So the curve integral is 
+\[\int_0^{\pi/6} G(C(t))\cdot C'(t)dt = \int_0^{\pi/6} \frac{1}{3}(-\sin t,\cos t)\cdot [3(-\sin t,\cos t)]dt=\pi/6.\]
+Notice that $\pi/6$ is also the change in angle of the parametrized particle over the course of its journey. 
+This is not a coincidence.
+
+\section*{An Aside on Differential Forms}
+A function $f(x,y,z)$ has gradient
+\[\grd f = \left( \frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}, \frac{\partial f}{\partial z} \right).\]
+The \textbf{total differential} of $f$ is 
+\[df = \frac{\partial f}{\partial x} dx + \frac{\partial f}{\partial y} dy + \frac{\partial f}{\partial z}dz.\]
+You can view this as a purely symbolic thing, perhaps a fancier way of writing the gradient. However, there is something
+meaningful about this expression. If we think of $dx,dy,dz$ as small changes in $x$, $y$, and $z$, then 
+this expression gives a way of approximating the corresponding change in $f$. Remember that differentiability means that 
+for $H$ in some small enough neighborhood of the origin, we can write
+\[f(X+H) - f(X) = \grd f(X) \cdot H + \norm{H} g(H)\]
+where $g(H) \to 0$ as $H \to 0$. The left hand side is the change in $f$, say $\Delta f$, going from $X$ to $X+H$.
+$H$ itself is the change in input, which we could write $H = (\Delta x, \Delta y, \Delta z)$, where we 
+imagine these are small changes in $x$, $y$, and $z$. Dropping the ``error'' term $\norm{H}g(H)$, this reads
+\[\Delta f \approx \frac{\partial f}{\partial x} \Delta x + \frac{\partial f}{\partial y} \Delta y + \frac{\partial f}{\partial z} \Delta z. \]
+
+\section*{Back to Curve Integrals}
+Given $x = r\cos\theta$ and $y = r\sin\theta$, we can form their total differentials
+\[dx = \cos\theta dr - r \sin\theta d\theta,\ dy = \sin\theta dr + r\cos\theta d\theta.\]
+This is equivalent to 
+\[dx = \cos\theta dr - yd\theta,\ dy = \sin\theta dr + x d\theta.\]
+We can rewrite this as 
+\[dx = \frac{x}{\sqrt{x^2+y^2}}dr - yd\theta,\ dy = \frac{y}{\sqrt{x^2+y^2}}dr + x d\theta.\]
+In turn, we can say
+\[-ydx = \frac{-xy}{\sqrt{x^2+y^2}}dr - y^2d\theta,\ dy = \frac{xy}{\sqrt{x^2+y^2}}dr + x^2 d\theta.\]
+Finally, adding these two equations together and solving for $d\theta$ yields,
+\[d\theta = \frac{-y}{x^2+y^2}dx + \frac{x}{x^2+y^2}dy. \]
+This differential form is telling us that integral of the right hand side above will \emph{always give the change in angle
+of the position vector over the course of traversing the curve.}
 \end{document}
