@@ -155,4 +155,39 @@ and $C_2(t) = (1-t, 1-t)$, $0 \leq t \leq 1$. The integral then becomes
 For a curve $C$ defined for $a\leq t \leq b$, the \textbf{reverse curve} $C^-$ is defined by 
 \[C^- = C(a+b-t), a \leq t \leq b.\]
 
+\textbf{Lemma.} As one might expect, we have 
+\[\int_{C^-} F = - \int_C F. \]
+This comes from using $u = a + b - t$, $du = -dt$.
+
+\textbf{Example.} Integrate $F(x,y) = (x^2,xy)$ along $y=x$
+from $(1,1)$ to $(0,0)$. We can use the lemma and instead integrate 
+along the reverse curve and flip the sign of the result. So let $C(t) = (t,t)$, 
+$0 \leq t \leq 1$. Then what we're after is 
+\[-\int_0^1 2t^2 dt = -2/3.\]
+
+The \textbf{reverse path} of $C_1, \ldots, C_m$ is 
+$C_m^-, \ldots, C_1^-$.
+
+\section*{Path Integrals and Potentials}
+
+\textbf{Theorem.} Let $F$ be a vector field on an open set $U$ and
+suppose $F = \grd \varphi$ for some $\varphi$ on $U$. Let $C$
+be a path from $P$ to $Q$. Then 
+\[\int_C F = \varphi(Q) - \varphi(P).\]
+In particular, there is no dependence on the path itself, only
+on the endpoints.
+\begin{proof}
+    Let $g(t) = \varphi(C(t))$. Then $g'(t) = \grd \varphi(C(t))\cdot C'(t)$.
+    Then we have
+    \[\int_C F = \int_a^b F(C(t))\cdot C'(t)dt = \int_a^b \grd \varphi(C(t))\cdot C'(t)dt.\]
+    This last integral is the integral of $g'(t)$ from $a$ to $b$, so this becomes 
+    \[\int_C F = \int_a^b g'(t) dt = g(t) \bigg\vert_a^b = \varphi(C(b)) - \varphi(C(b)) = \varphi(Q) - \varphi(P).\]
+\end{proof}
+
+\textbf{Corollary.} The integral around any closed loop of a conservative vector
+field is $0$. This is because such an integral will end up evaluating to $\varphi(P) - \varphi(P) = 0$.
+
+Notice this gives a test: if you can find a closed loop $C$ with $\int_C F \neq 0$,
+then $F$ is certainly not conservative.
+
 \end{document}
