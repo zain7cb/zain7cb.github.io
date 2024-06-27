@@ -90,7 +90,10 @@ parametrization you take. That is, if $C_1(t)$ and $C_2(t)$ trace out the same
 curve but proceed at different rates, the integral of $F$ over either
 curve will be the same.
 
-\textbf{Example:} 
+\textbf{Example.} Compute the integral of $F(x,y) = (x^2, xy)$ on the parabola $x=y^2$ from $(1,-1)$ to $(1,1)$.
+
+We can parametrize our curve as $C(t) = (t^2, t)$, $-1 \leq t \leq 1$. The integral is then
+\[\int_C F \cdot dC = \int_{-1}^1 f(C(t))\cdot C'(t)dt = \int_{-1}^1(t^4,t^3)\cdot(2t+1)dt = \int_{-1}^1 (2t^5 + t^3)dt.\]
 
 
 \end{document}
