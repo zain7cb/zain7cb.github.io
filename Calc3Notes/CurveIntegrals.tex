@@ -135,4 +135,19 @@ Finally, adding these two equations together and solving for $d\theta$ yields,
 \[d\theta = \frac{-y}{x^2+y^2}dx + \frac{x}{x^2+y^2}dy. \]
 This differential form is telling us that integral of the right hand side above will \emph{always give the change in angle
 of the position vector over the course of traversing the curve.}
+
+A \textbf{path} $C$ is a sequence of curves $C_1, \ldots, C_m$ where each $C_i$ is defined on an interval
+$[a_i,b_i]$ and if we write $P_i = C_i(a_i)$ and $Q_i = C_i(b_i)$, then $P_{i+1}=Q_i$. In other words, one curve
+ends where the next one starts. The integral along such a path $C$ is defined as 
+\[\int_C F := \int_{C_1} F + \cdots + \int_{C_m} F.\]
+
+A \textbf{closed path} is one such that $Q_m = P_1$ (we close the loop).
+
+\textbf{Example.} Evaluate the integral of $F = (x^2,xy)$ along the closed path that goes along $y=x^2$ from
+$(0,0)$ to $(1,1)$, then along the line $y=x$ from $(1,1)$ back to $(0,0)$. 
+
+We can parametrize this path as two curves $C_1$ and $C_2$. Where $C_1(t) = (t,t^2)$, $0 \leq t \leq 1$
+and $C_2(t) = (1-t, 1-t)$, $0 \leq t \leq 1$. The integral then becomes
+\[\int_C F = \int_{0}^1 (t^2, t^3)\cdot(1, 2t)dt + \int_0^1 ((1-t)^2, (1-t)^2)\cdot(-1,-1)dt = -\frac{1}{3} + \frac{2}{5}.\]
+
 \end{document}
