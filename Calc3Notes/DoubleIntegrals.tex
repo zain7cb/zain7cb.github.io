@@ -14,6 +14,7 @@
 \usepackage{tcolorbox}
 \usepackage{physics}
 \DeclareMathOperator{\grd}{grad}
+\DeclareMathOperator{\area}{Area}
 \colorlet{LightGray}{White!90!Periwinkle}
 \colorlet{LightOrange}{Orange!15}
 \colorlet{LightGreen}{Green!15}
@@ -48,11 +49,45 @@
 
 % ------------------------------------------------------------------------------
 
+\section*{Calc I Integrals Revisited}
+
+Recall the construction of the (Riemann) integral of a function $f$ defined on $[a,b]$.
+We take a \textbf{partition} \[a = x_1 \leq x_2 \leq \cdots \leq x_m = b\]
+of the interval. On each subinterval $[x_i,x_{i+1}]$, we choose a value 
+$t_i$ lying in that subinterval. The corresponding Riemann sum is 
+\[\sum_{i=1}^{m-1} f(t_i)(x_{i+1}-x_i).\]
+The \textbf{width} of this partition $P$ is defined to be the largest
+of the values $x_{i+1} - x_i$. A function is then Riemann integrable if there 
+is some value $S$ such that
+\[\sum_P f(t_i)(x_{i+1}-x_i) \to S\]
+as $width(P) \to 0$. Notice that this must happen independently of the choice
+of the $t_i$'s. 
+
+Closely related is the Darboux integral. For a given partition $P$, one defines
+\[U(f,P) = \sum_P \sup_{[x_i,x_{i+1}]} f(t),\ L(f,P) = \sum_P \inf_{[x_i,x_{i+1}]} f(t).\]
+If for $\epsilon > 0$ there is some partition $P$ so that
+$U(f,P) - L(f,P) < \epsilon$, $f$ is said to be Darboux integrable.
+It turns out that Riemann and Darboux integrability are equivalent.
+
+An important feature of the Riemann integral is that it can deal with
+a finite number of discontinuties, whether they're jump discontinuties 
+or removable, so long as $f$ is bounded.
+
+\section*{Boundedness, Supremum, Infimum}
+A function $f$ defined on a region $R$ is \textbf{bounded} if for some number $M$, $|f(X)| < M$ for all $X \in \mathbb{R}$.
+
+A set of real numbers $A$ is bounded if it fits inside an interval $(a,b)$.
+In this case, $a$ is a lower bound on the set, and $b$ is an upper bound.
+But we can possibly do better. We can slide $b$ to the left, and as long as 
+its still an upper bound, we can keep pushing it. At some point, we'll run into points
+of $A$ and can't go on. Thus we have the concept of a \textbf{supremum} or 
+\textbf{least upper bound}. Similarly, by sliding $a$ to the right,
+we have the notion of an \textbf{infimum} or \textbf{greatest lower bound}.
+
 \section*{Double Integrals}
 The theory of integration is a bit more technical than the rest of what we've done so far, so the proofs of several theorems are omitted from Lang.
 It's nevertheless helpful to discuss a few of the fundamental notions involved.
 
-A function $f$ defined on a region $R$ is \textbf{bounded} if for some number $M$, $|f(X)| < M$ for all $X \in \mathbb{R}$.
 
 The set $[a,b] \times [c,d]$ consists of those points $(x,y)$ such that $a \leq x \leq b$ and
 $c \leq x \leq d$. This is a rectangle in the plane.
@@ -70,5 +105,11 @@ $R=[a,b]\times [c,d]$ into smaller rectangles.
 \end{figure}
 
 We denote by $S_{ij}$ the subrectangle $[x_i,x_{i+1}] \times [y_j, y_{j+1}]$.
+
+Double integrals are defined very similarly as in the single variable case.
+\[U(f,P) = \sum_S (\sup_S f)(\area(S)),\ L(f,P)= \sum_S (\inf_S f)(\area(S)).\]
+
+The double integral has two nice interpretations, one as a volume,
+and the other as a mass.
 
 \end{document}
