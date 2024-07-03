@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1719948908 "/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/Calc3Notes/DoubleIntegrals.tex" "DoubleIntegrals.pdf" "DoubleIntegrals" 1719948910 0
-  "/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/Calc3Notes/DoubleIntegrals.tex" 1719948908 5270 8f11f80a358d1c470df7c38552f3d1dd ""
+["pdflatex"] 1720030280 "/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/Calc3Notes/DoubleIntegrals.tex" "DoubleIntegrals.pdf" "DoubleIntegrals" 1720030282 0
+  "/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/Calc3Notes/DoubleIntegrals.tex" 1720030280 5297 8752c908e994d0d2bf699568f0f22f59 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -164,9 +164,9 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1709422615 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1709422560 7883453 425cf9cde56a6b73db0d3394ac3a0367 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "DoubleIntegrals.aux" 1719948909 634 ccc720d4430018ba2daeace75f896277 "pdflatex"
-  "DoubleIntegrals.out" 1719948909 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "DoubleIntegrals.tex" 1719948908 5270 8f11f80a358d1c470df7c38552f3d1dd ""
+  "DoubleIntegrals.aux" 1720030282 634 ccc720d4430018ba2daeace75f896277 "pdflatex"
+  "DoubleIntegrals.out" 1720030281 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "DoubleIntegrals.tex" 1720030280 5297 8752c908e994d0d2bf699568f0f22f59 ""
   "partition.PNG" 1719943642 20325 6f6d99cfbaef594bfe09bb4c45d49040 ""
   (generated)
   "DoubleIntegrals.aux"
