@@ -1,0 +1,93 @@
+\documentclass{article}
+
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{thmtools}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{framed}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{physics}
+
+\DeclareMathOperator{\grd}{grad}
+\colorlet{LightGray}{White!90!Periwinkle}
+\colorlet{LightOrange}{Orange!15}
+\colorlet{LightGreen}{Green!15}
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+
+\declaretheoremstyle[name=Theorem,]{thmsty}
+\declaretheorem[style=thmsty,numberwithin=section]{theorem}
+\tcolorboxenvironment{theorem}{colback=LightGray}
+
+\declaretheoremstyle[name=Proposition,]{prosty}
+\declaretheorem[style=prosty,numberlike=theorem]{proposition}
+\tcolorboxenvironment{proposition}{colback=LightOrange}
+
+\declaretheoremstyle[name=Principle,]{prcpsty}
+\declaretheorem[style=prcpsty,numberlike=theorem]{principle}
+\tcolorboxenvironment{principle}{colback=LightGreen}
+
+\setstretch{1.2}
+\geometry{
+    textheight=9in,
+    textwidth=5.5in,
+    top=1in,
+    headheight=12pt,
+    headsep=25pt,
+    footskip=30pt
+}
+
+% ------------------------------------------------------------------------------
+
+\begin{document}
+
+
+% ------------------------'
+
+\textbf{HW 7.}
+
+\textbf{Exercise 1.} Evaluate the following repeated integrals.
+\begin{itemize}
+    \item \[\int_0^\pi \int_0^{\sin(x)} y\ dy dx\]
+    \item \[\int_0^1 \int_{y^2}^y \sqrt{x}\ dx dy\]
+\end{itemize}
+
+\textbf{Exercise 2.} Sketch the regions
+\begin{itemize}
+    \item \[R_1 = \{ (x,y) \in \mathbb{R}^2 : |x| \leq 1, -1 \leq y \leq 2\}\]
+    \item \[R_2 = \{ (x,y) \in \mathbb{R}^2 : x + y \leq 1, x \geq 0, y \geq 0\}\]
+    \item \[R_3 = \{ (x,y) \in \mathbb{R}^2 : |x|+|y| \leq 1 \}\]
+\end{itemize}
+Note that 
+\[|x| = \begin{cases}
+    x \text{ if } x\geq 0\\
+    -x \text{ if } x < 0,
+\end{cases}\]
+so for the last one, it may help to consider what happens when $x \geq 0, y \geq 0$, then what happens when $x \geq 0$, $y \leq 0$, etc.
+
+\textbf{Exercise 3.} Compute the integral 
+\[\iint_R x\cos(x+y) dA\]
+where $R$ is the inside of the triangle whose vertices are $(0,0)$, $(\pi,0)$, $(\pi,\pi)$.
+
+
+\textbf{Exercise 4.} Compute the integral 
+\[\iint_R (x^2-y^2)dA \]
+where $R$ is the region defined by $0 \leq x \leq 1$, $x^2 - y^2 \geq 0$.
+
+\textbf{Exercise 5.} Integrate $e^{-(x^2+y^2)}$ over the disk bounded by the circle $x^2 + y^2 = a^2$, 
+where $a>0$.
+
+\textbf{Exercise 6.} Let $a > 0$. Evaluate 
+\[ \int_{-a}^a \int_{0}^{\sqrt{a^2-y^2}} (x^2 + y^2) dx dy\]
+by changing to polar coordinates.
+
+\textbf{Exercise 7.} A cylindrical hole of radius 1 is bored through the center of a sphere of radius 2.
+What volume is removed?
+
+\end{document}
