@@ -1,0 +1,95 @@
+\documentclass{article}
+
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{thmtools}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{framed}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{physics}
+
+\DeclareMathOperator{\grd}{grad}
+\DeclareMathOperator{\crl}{curl}
+\DeclareMathOperator{\dvr}{div}
+\colorlet{LightGray}{White!90!Periwinkle}
+\colorlet{LightOrange}{Orange!15}
+\colorlet{LightGreen}{Green!15}
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+
+\declaretheoremstyle[name=Theorem,]{thmsty}
+\declaretheorem[style=thmsty,numberwithin=section]{theorem}
+\tcolorboxenvironment{theorem}{colback=LightGray}
+
+\declaretheoremstyle[name=Proposition,]{prosty}
+\declaretheorem[style=prosty,numberlike=theorem]{proposition}
+\tcolorboxenvironment{proposition}{colback=LightOrange}
+
+\declaretheoremstyle[name=Principle,]{prcpsty}
+\declaretheorem[style=prcpsty,numberlike=theorem]{principle}
+\tcolorboxenvironment{principle}{colback=LightGreen}
+
+\setstretch{1.2}
+\geometry{
+    textheight=9in,
+    textwidth=6in,
+    top=0.5in,
+    headheight=12pt,
+    headsep=25pt,
+    footskip=30pt
+}
+
+% ------------------------------------------------------------------------------
+
+\begin{document}
+
+
+% ------------------------'
+
+\textbf{HW 9.}
+
+\textbf{Exercise 1.} Fix some $\alpha$ with $0 < \alpha < \pi/2$ and some $h>0$. Let 
+\[X(\theta,t) = (t\sin \alpha \cos \theta, t \sin \alpha \sin \theta, t \cos \alpha), \]
+where $\theta \in [0,2\pi]$ and $t \in [0,h\sec \alpha]$. This parametrizes a cone of height $h$. Compute the
+tangent vectors $\partial X / \partial \theta$ and $\partial X/ \partial t$ as well as their cross product.
+Find the equation for the surface in rectangular/Cartesian coordinates. 
+
+\textbf{Exercise 2.} Fix $h, a >0$ Let 
+\[X(t,\theta) = (a t \cos \theta, a t \sin \theta, t^2)\]
+where $\theta \in [0,2\pi]$ and $t \in [0,h]$. This parametrizes a paraboloid. Compute the
+tangent vectors $\partial X / \partial \theta$ and $\partial X/ \partial t$ as well as their cross product.
+Find the equation for the surface in rectangular/Cartesian coordinates. What surface do we obtain if we replace
+$t^2$ with $t$ in the $z$ coordinate?
+
+\textbf{Exercise 3.} Compute the surface area of the torus parametrized by 
+\[X(\theta, \varphi) = \left((a+b\cos \varphi)\cos\theta, (a+b\cos\varphi)\sin\theta, b \sin \varphi\right)\]
+where $0 \leq \varphi < 2\pi$ and $0 \leq \theta < 2\pi$. (Hint: the cross product computation is a little messy,
+but using the identity $\sin^2 x + \cos^2 x = 1$ a couple of times, you can simplify the expression for $\norm{\frac{\partial X}{\partial \varphi} \times \frac{\partial X}{\partial \theta}}$ 
+considerably).
+
+\textbf{Exercise 4.} Let $\varphi: \mathbb{R}^3 \to \mathbb{R}$ be a smooth function. Show that
+\[ \crl (\grd \varphi) = 0. \]
+
+\textbf{Exercise 5.} Let $F: \mathbb{R}^3 \to \mathbb{R}^3$ be a smooth vector field. Show that $\dvr \crl F = 0$.
+
+\textbf{Exercise 6.} Compute the integral 
+\[\int_S \crl F \cdot \vec{n} d\sigma\]
+where $F = (-y,x^2,z^3)$, and $S$ is the surface
+\[x^2 + y^2 + z^2 = 1,\ -\frac{1}{2} \leq z \leq 1.\]
+[Hint: by Stokes' theorem, the integral above of any two surfaces that share the same boundary will have the same
+value, so one can deform this surface (while holding the boundary fixed) to a much simpler one and compute the integral of $\crl F$ on the deformed surface instead.]
+
+\textbf{Exercise 7.} Let $C$ be a closed curve which is the 
+boundary of a surface $S$. Let $f$ and $g$ be scalar-valued functions. Show that
+\[\int_C (f \grd g) \cdot dC = \iint_S [(\grd f) \times (\grd g)]\cdot \mathbf{n} d \sigma.\]
+Show consequently that 
+\[\int_C (f \grd g + g \grd f)\cdot dC = 0.\]
+
+
+\end{document}
