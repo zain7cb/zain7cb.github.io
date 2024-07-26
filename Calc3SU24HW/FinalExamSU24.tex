@@ -54,7 +54,46 @@
 
 \textbf{Final Exam}
 
-\textbf{Exercise 1.} 
+\textbf{Exercise 1.} In this exercise, you will derive a formula for the distance between
+two lines $L_1(t) = A_1t + B_1$ and $L_2(t) = A_2t + B_2$ in $\mathbb{R}^3$ (that is, the minimal distance between any pair $P,Q$ of points where $P$ lies on $L_1$ and $Q$ on $L_2$).
 
+(a) Let $f: X \to \mathbb{R}$ be a function on some set $X$. Let $Y \subseteq X$
+and suppose $y \in Y$ is a global minimum for $f$. That is, 
+\[f(y) \leq f(x)\]
+for all $x \in X$. Show/explain why $y$ is also a global minimum for
+$f|_Y: Y \to \mathbb{R}$, where $f|_A$ is the restriction of $f$ to $Y$. 
+(Don't overthink this. This is simply a helpful observation for later.)
 
+(b) Assume for simplicity that $L_1$ and $L_2$ are not parallel. Find equations
+(in terms of the $A_i$ and $B_i$) for two parallel planes, one containing $L_1$ and the other containing $L_2$.
+In particular, note that there exist such planes. (Hint: there is a very natural expression for the normal vector.)
+
+(c) Recall that the \emph{projection} of a vector $A$ onto a vector $B$ is 
+\[\frac{A \cdot B}{B \cdot B} B.\]
+Use this to find the distance between the two planes (this is the length of any perpendicular segment connecting the two planes). Your answer should
+be an expression involving $A_1$, $A_2$, $B_1$, and $B_2$. 
+
+(d) Observe that if two non-parallel lines $L_1$ and $L_2$ lie in parallel planes (as above), then
+there is a point $P$ on $L_1$ and a point $Q$ on $L_2$ such that the segment $PQ$ 
+is perpendicular to both planes. In light of part (a), explain why
+the distance you found in part (c) is indeed the distance between the lines $L_1$ and $L_2$.
+
+\newpage
+\textbf{Exercise 2.} If we drag a line segment around in the plane, we sweep out
+some area (think of a roller paint brush). Similarly, if we drag a planar figure (such as a square or disk) around in 3-space,
+we obtain some kind of solid. The volume $V$ of this solid is given by Guldin's formula, which states
+\[V = \int_{t_0}^{t_1} A(t) \mathbf{n}\cdot C'(t) dt,\]
+where $C(t)$ is the curve traced out by the centroid/center of mass of the planar figure, $\mathbf{n}$ is the unit normal of the planar figure,
+and $A(t)$ is the area of the planar figure. Note that $A(t)$ can depend on time, meaning
+the figure is allowed to change shape as it traverses through space. Note also that $\mathbf{n}\cdot C'(t)$ is
+simply the component of the velocity of the centroid of the figure along the direction perpendicular to the figure.
+
+(a) Use this formula to derive the volume of a cone with a base of radius $r$ and
+a height $h$. (Hint: a cone is obtained by dragging a disk upward at constant speed, while letting
+the radius shrink to $0$ linearly with time. If we center the cone around the $z$-axis, the trajectory of the 
+centroid is simply $C(t) = (0,0,t)$, where $0 \leq t \leq h$).
+
+(b) Now suppose that we skew the cone by letting the cross section $A$ ``drift'' in the $x$ and $y$
+directions, so that the centroid now traces out $C(t) = (k_1 t, k_2 t, t)$. What is the volume of the
+resulting solid?
 \end{document}
