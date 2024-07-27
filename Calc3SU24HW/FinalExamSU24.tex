@@ -17,6 +17,7 @@
 \DeclareMathOperator{\grd}{grad}
 \DeclareMathOperator{\crl}{curl}
 \DeclareMathOperator{\dvr}{div}
+\DeclareMathOperator{\length}{length}
 \colorlet{LightGray}{White!90!Periwinkle}
 \colorlet{LightOrange}{Orange!15}
 \colorlet{LightGreen}{Green!15}
@@ -96,4 +97,21 @@ centroid is simply $C(t) = (0,0,t)$, where $0 \leq t \leq h$).
 (b) Now suppose that we skew the cone by letting the cross section $A$ ``drift'' in the $x$ and $y$
 directions, so that the centroid now traces out $C(t) = (k_1 t, k_2 t, t)$. What is the volume of the
 resulting solid?
+
+\newpage
+\textbf{Exercise 3.} Recall that for any two vectors $A$ and $B$,
+\[|A \cdot B| \leq \norm{A} \norm{B}.\] 
+Also recall that 
+\[\left| \int_a^b f(x)dx  \right| \leq \int_a^b |f(x)|dx.\]
+We also have seen that if $f(x) \leq g(x)$ for all $x \in [a,b]$, then \[\int_a^b f(x)dx \leq \int_a^b g(x)dx.\]
+Recall once again that the length of a curve is the integral of speed:
+\[\int_{a}^{b} \norm{C'(t)} dt.\]
+Suppose now that $F: \mathbb{R}^3 \to \mathbb{R}^3$ is a vector that is bounded. That is, there is some
+number $M$
+$|F(X)| < M$ for all $X \in \mathbb{R}^3$. Use the above facts to show that for a curve $C(t)$ defined 
+for $a \leq t \leq b$, we have
+\[\int_a^b F(C(t))\cdot C'(t)dt \leq M \length(C).\]
+In other words, on a bounded vector field, the path integral $\int F \cdot dC$ will have a small value
+if the path is short.
+
 \end{document}
