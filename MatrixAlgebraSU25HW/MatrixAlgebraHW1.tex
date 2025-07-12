@@ -1,0 +1,77 @@
+\documentclass{article}
+
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{thmtools}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{framed}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{physics}
+\usepackage[shortlabels]{enumitem}
+
+\DeclareMathOperator{\grd}{grad}
+\DeclareMathOperator{\crl}{curl}
+\DeclareMathOperator{\dvr}{div}
+\DeclareMathOperator{\length}{length}
+\DeclareMathOperator{\vspan}{span}
+\DeclareMathOperator{\rng}{range}
+\DeclareMathOperator{\nul}{null}
+\colorlet{LightGray}{White!90!Periwinkle}
+\colorlet{LightOrange}{Orange!15}
+\colorlet{LightGreen}{Green!15}
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+
+\declaretheoremstyle[name=Theorem,]{thmsty}
+\declaretheorem[style=thmsty,numberwithin=section]{theorem}
+\tcolorboxenvironment{theorem}{colback=LightGray}
+
+\declaretheoremstyle[name=Proposition,]{prosty}
+\declaretheorem[style=prosty,numberlike=theorem]{proposition}
+\tcolorboxenvironment{proposition}{colback=LightOrange}
+
+\declaretheoremstyle[name=Principle,]{prcpsty}
+\declaretheorem[style=prcpsty,numberlike=theorem]{principle}
+\tcolorboxenvironment{principle}{colback=LightGreen}
+
+\setstretch{1.2}
+\geometry{
+    textheight=9in,
+    textwidth=6in,
+    top=0.5in,
+    headheight=12pt,
+    headsep=25pt,
+    footskip=30pt
+}
+
+% ------------------------------------------------------------------------------
+
+\begin{document}
+
+
+% ------------------------'
+
+\textbf{HW1}
+
+\textbf{Exercise 1.} Let $\mathbf{x} = (1,2,3)^T$, $\mathbf{y} = (y_1, y_2, y_3)^T$, and $\mathbf{z} = (4,2,1)^T$. Compute $2\mathbf{x}$, $3\mathbf{y}$, and $\mathbf{x} + 2\mathbf{y} - 3\mathbf{z}$.
+
+
+\textbf{Exercise 2.} True or false:
+\begin{enumerate}[(a)]
+    \item Every vector space contains a zero vector.
+    \item If $f$ and $g$ are polynomials of degree $n$, then $f + g$ is a polynomial of degree $n$.
+    \item If $f$ and $g$ are polynomials of degree $n$, then $f + g$ is a polynomial of degree less than or equal to $n$.
+\end{enumerate}
+
+\textbf{Exercise 3.} True or false:
+\begin{enumerate}[(a)]
+    \item 
+\end{enumerate}
+
+\end{document}
