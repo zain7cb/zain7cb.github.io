@@ -62,16 +62,51 @@
 \textbf{Exercise 1.} Let $\mathbf{x} = (1,2,3)^T$, $\mathbf{y} = (y_1, y_2, y_3)^T$, and $\mathbf{z} = (4,2,1)^T$. Compute $2\mathbf{x}$, $3\mathbf{y}$, and $\mathbf{x} + 2\mathbf{y} - 3\mathbf{z}$.
 
 
-\textbf{Exercise 2.} True or false:
+\textbf{Exercise 2.} True or false (and give a brief justification):
 \begin{enumerate}[(a)]
     \item Every vector space contains a zero vector.
     \item If $f$ and $g$ are polynomials of degree $n$, then $f + g$ is a polynomial of degree $n$.
     \item If $f$ and $g$ are polynomials of degree $n$, then $f + g$ is a polynomial of degree less than or equal to $n$.
 \end{enumerate}
 
-\textbf{Exercise 3.} True or false:
+\textbf{Exercise 3.} True or false (and give a brief justification):
 \begin{enumerate}[(a)]
-    \item 
+    \item Any set of vectors that contains the zero vector is linearly dependent.
+    \item A basis must contain the zero vector.
+    \item Subsets of a linearly dependent set are linearly dependent.
+    \item Subsets of a linearly independent set are linearly independent.
 \end{enumerate}
+
+\textbf{Exercise 4.} A matrix $A$ is said to be \textbf{symmetric} if $A^T = A$. Write down a basis for the space of $2 \times 2$ symmetric matrices (there are many possible answers). How many elements does this basis have?
+
+\textbf{Exercise 5.} Let $\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3$ be vectors in a vector space $V$. Is it possible that $\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3$ are linearly independent, but 
+$\mathbf{w}_1 = \mathbf{v}_1 + \mathbf{v}_2$, $\mathbf{w}_2 = \mathbf{v}_2 + \mathbf{v}_3$, and $\mathbf{w}_3 = \mathbf{v}_3 + \mathbf{v}_1$ are linearly dependent? Justify your answer.
+
+\textbf{Exercise 6.} Multiply the following:
+\begin{enumerate}[(a)]
+    \item $\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix} \begin{pmatrix} 5 \\ 6 \end{pmatrix}$
+    \item $\begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{pmatrix} \begin{pmatrix} 7 \\ 8 \\ 9 \end{pmatrix}$           
+    \item $\begin{pmatrix} 1 & 2 \\ 3 & 4 \\ 5 & 6 \end{pmatrix} \begin{pmatrix} 7 \\ 8 \end{pmatrix}$
+\end{enumerate}
+
+\textbf{Exercise 7.} Let $T : \mathbb{R}^2 \to \mathbb{R}^2$ be given by reflection about the line $x_2 = x_1$ (or $y = x$ if one prefers). Note that this map is linear. Find the matrix of $T$.
+
+\textbf{Exercise 8.} Find the $3 \times 3$ matrix that represent the following linear transformations of $\mathbb{R}^3$:
+\begin{enumerate}[(a)]
+    \item Projection onto the $x$-$y$ plane.
+    \item Reflection about the $x$-$y$ plane.
+    \item Rotation $30^\circ$ counterclockwise about the $z$-axis.
+\end{enumerate}
+
+\textbf{Exercise 9.} Multiply two rotation matrices $T_{\alpha}$ and $T_{\beta}$ (this is a rare instance where the order of multiplication does not matter since rotations commute). Use this to deduce formulas for
+$\cos(\alpha + \beta)$ and $\sin(\alpha + \beta)$ in terms of $\cos(\alpha)$, $\sin(\alpha)$, $\cos(\beta)$, and $\sin(\beta)$.
+
+\textbf{Exercise 10.} Find all left inverses of the column vector $(1,2,3)^T$.
+
+\textbf{Exercise 11.} Is the column $(1,2,3)^T$ right invertible? Justify your answer.
+
+\textbf{Exercise 12.} Suppose $AB = \mathbf{0}$ for some matrices $A$ and $B$. Is it possible that $A$ is invertible? Justify your answer.
+
+\textbf{Exercise 13.} Let $X$ be a subspace of a vector space $V$. Let $\mathbf{v} \in V \setminus X$ (that is, $\mathbf{v}$ lies $V$ but not in $X$). Let $\mathbf{x} \in X$. Show that $\mathbf{x} + \mathbf{v}$ is \emph{not} in $X$.
 
 \end{document}
