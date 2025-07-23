@@ -1,0 +1,110 @@
+\documentclass{article}
+
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{thmtools}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{framed}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{physics}
+\usepackage[shortlabels]{enumitem}
+
+\DeclareMathOperator{\grd}{grad}
+\DeclareMathOperator{\crl}{curl}
+\DeclareMathOperator{\dvr}{div}
+\DeclareMathOperator{\length}{length}
+\DeclareMathOperator{\vspan}{span}
+\DeclareMathOperator{\rng}{range}
+\DeclareMathOperator{\nul}{null}
+\colorlet{LightGray}{White!90!Periwinkle}
+\colorlet{LightOrange}{Orange!15}
+\colorlet{LightGreen}{Green!15}
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+
+\declaretheoremstyle[name=Theorem,]{thmsty}
+\declaretheorem[style=thmsty,numberwithin=section]{theorem}
+\tcolorboxenvironment{theorem}{colback=LightGray}
+
+\declaretheoremstyle[name=Proposition,]{prosty}
+\declaretheorem[style=prosty,numberlike=theorem]{proposition}
+\tcolorboxenvironment{proposition}{colback=LightOrange}
+
+\declaretheoremstyle[name=Principle,]{prcpsty}
+\declaretheorem[style=prcpsty,numberlike=theorem]{principle}
+\tcolorboxenvironment{principle}{colback=LightGreen}
+
+\setstretch{1.2}
+\geometry{
+    textheight=9in,
+    textwidth=6in,
+    top=0.5in,
+    headheight=12pt,
+    headsep=25pt,
+    footskip=30pt
+}
+
+% ------------------------------------------------------------------------------
+
+\begin{document}
+
+
+% ------------------------'
+
+\textbf{HW2}
+All of the following exercises are from LADW.
+
+\textbf{2.2.} Find \textit{all} solutions of the vector equation
+$$
+x_1\mathbf{v}_1 + x_2\mathbf{v}_2 + x_3\mathbf{v}_3 = \mathbf{0},
+$$
+where $\mathbf{v}_1 = (1, 1, 0)^T$, $\mathbf{v}_2 = (0, 1, 1)^T$ and $\mathbf{v}_3 = (1, 0, 1)^T$. What conclusion can you make about linear independence (dependence) of the system of vectors $\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3$?
+
+\textbf{2.1.} Write the systems of equations below in matrix form and as vector equations. Find the solutions in vector form.
+
+
+(a) 
+\[\left\{\begin{array}{rcrcrcr}
+     x_1 & - & 2x_2 & - &  x_3 & = & -1 \\
+    2x_1 & + & 2x_2 & + &  x_3 & = & 1 \\
+    3x_1 & - & 5x_2 & -  &  2x_3    & = & -1 
+\end{array}
+\right.\]
+
+
+
+(b) 
+
+\[\left\{\begin{array}{rcrcrcr}
+     x_1 & - & 2x_2 & - &  x_3 & = & 1 \\
+    2x_1 & - & 3x_2 & + &  x_3 & = & 6 \\
+    3x_1 & - & 5x_2 &   &      & = & 7 \\
+     x_1 &   &      & + & 5x_3 & = & 9
+\end{array}
+\right.\]
+
+(c) 
+\[
+\left\{
+\begin{array}{rcrcrcrcr}
+     x_1 & + & 2x_2 &   &      & + &  2x_4 & = & 6 \\
+    3x_1 & + & 5x_2 & - &  x_3 & + &  6x_4 & = & 17 \\
+    2x_1 & + & 4x_2 & + &  x_3 & + &  2x_4 & = & 12 \\
+    2x_1 &   &      & - & 7x_3 & + & 11x_4 & = & 7
+\end{array}
+\right.
+\]
+
+\textbf{3.1.} For what value of $b$ does the system
+$$
+\begin{pmatrix} 1 & 2 & 2 \\ 2 & 4 & 6 \\ 1 & 2 & 3 \end{pmatrix} \mathbf{x} = \begin{pmatrix} 1 \\ 4 \\ b \end{pmatrix}
+$$
+have a solution? Find the general solution of the system for this value of $b$.
+
+\end{document}
