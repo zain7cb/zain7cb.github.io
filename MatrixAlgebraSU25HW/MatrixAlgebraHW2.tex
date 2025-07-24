@@ -80,16 +80,6 @@ where $\mathbf{v}_1 = (1, 1, 0)^T$, $\mathbf{v}_2 = (0, 1, 1)^T$ and $\mathbf{v}
 
 
 (b) 
-
-\[\left\{\begin{array}{rcrcrcr}
-     x_1 & - & 2x_2 & - &  x_3 & = & 1 \\
-    2x_1 & - & 3x_2 & + &  x_3 & = & 6 \\
-    3x_1 & - & 5x_2 &   &      & = & 7 \\
-     x_1 &   &      & + & 5x_3 & = & 9
-\end{array}
-\right.\]
-
-(c) 
 \[
 \left\{
 \begin{array}{rcrcrcrcr}
@@ -106,5 +96,19 @@ $$
 \begin{pmatrix} 1 & 2 & 2 \\ 2 & 4 & 6 \\ 1 & 2 & 3 \end{pmatrix} \mathbf{x} = \begin{pmatrix} 1 \\ 4 \\ b \end{pmatrix}
 $$
 have a solution? Find the general solution of the system for this value of $b$.
+
+\textbf{3.2.} Determine whether the following vectors are linearly independent:
+\[
+\begin{pmatrix} 1 \\ 1 \\ 0 \\0 \end{pmatrix},
+\begin{pmatrix} 1 \\ 0 \\ 1 \\0 \end{pmatrix}, 
+\begin{pmatrix} 0 \\ 0 \\ 1 \\1 \end{pmatrix},
+\begin{pmatrix} 0 \\ 1 \\ 0 \\1 \end{pmatrix} \]
+
+
+\textbf{3.4} Do the polynomials $x^3 + 2x$, $x^2 + x + 1$, and $x^3 + 5$ span $\mathbb{P}_3$? Justify your answer. (Hint: $\mathbb{P}_3$ is isomorphic to $\mathbb{R}^4$ via the linear map $A: \mathbb{R}^4 \to \mathbb{P}_3$ given by $A(a_0, a_1, a_2, a_3)^T = a_0 + a_1 x + a_2 x^2 + a_3 x^3$.)
+
+\textbf{3.6} Prove or disprove: If a square matrix $A$ has linearly independent columns, then so does $A^2 = A A$.
+
+\textbf{3.8} Show that if $A \mathbf{x} = \mathbf{0}$ has a unique solution (i.e. only the trivial solution), then $A$ is left-invertible. Note that we've already seen that if $A$ is left-invertible, then there is a unique solution to $A \mathbf{x} = \mathbf{0}$; now we are going the other way around. (Hint: elementary matrices/row operations are invertible, so you can reduce the problem to showing that a matrix $A$ with columns that are \emph{distinct} standard basis vectors is left-invertible.)
 
 \end{document}
