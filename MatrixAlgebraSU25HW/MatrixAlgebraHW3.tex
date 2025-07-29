@@ -1,0 +1,77 @@
+\documentclass{article}
+
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{thmtools}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{framed}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{physics}
+\usepackage[shortlabels]{enumitem}
+
+\DeclareMathOperator{\grd}{grad}
+\DeclareMathOperator{\crl}{curl}
+\DeclareMathOperator{\dvr}{div}
+\DeclareMathOperator{\length}{length}
+\DeclareMathOperator{\vspan}{span}
+\DeclareMathOperator{\rng}{range}
+\DeclareMathOperator{\nul}{null}
+\colorlet{LightGray}{White!90!Periwinkle}
+\colorlet{LightOrange}{Orange!15}
+\colorlet{LightGreen}{Green!15}
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+
+\declaretheoremstyle[name=Theorem,]{thmsty}
+\declaretheorem[style=thmsty,numberwithin=section]{theorem}
+\tcolorboxenvironment{theorem}{colback=LightGray}
+
+\declaretheoremstyle[name=Proposition,]{prosty}
+\declaretheorem[style=prosty,numberlike=theorem]{proposition}
+\tcolorboxenvironment{proposition}{colback=LightOrange}
+
+\declaretheoremstyle[name=Principle,]{prcpsty}
+\declaretheorem[style=prcpsty,numberlike=theorem]{principle}
+\tcolorboxenvironment{principle}{colback=LightGreen}
+
+\setstretch{1.2}
+\geometry{
+    textheight=9in,
+    textwidth=6in,
+    top=0.5in,
+    headheight=12pt,
+    headsep=25pt,
+    footskip=30pt
+}
+
+% ------------------------------------------------------------------------------
+
+\begin{document}
+
+
+% ------------------------'
+
+\textbf{HW3}
+All of the following exercises are from LADW.
+
+\textbf{6.1.} True or false (explain your answers):
+
+\begin{enumerate}
+    \item[a)] Any system of linear equations has at least one solution;
+    \item[b)] Any system of linear equations has at most one solution;
+    \item[c)] Any homogeneous system of linear equations has at least one solution;
+    \item[d)] Any system of $n$ linear equations in $n$ unknowns has at least one solution;
+    \item[e)] Any system of $n$ linear equations in $n$ unknowns has at most one solution;
+    \item[f)] If the homogeneous system corresponding to a given system of a linear equations has a solution, then the given system has a solution;
+    \item[g)] If the coefficient matrix of a homogeneous system of $n$ linear equations in $n$ unknowns is invertible, then the system has no non-zero solution;
+    \item[h)] The solution set of any system of $m$ equations in $n$ unknowns is a subspace in $\mathbb{R}^n$;
+    \item[i)] The solution set of any homogeneous system of $m$ equations in $n$ unknowns is a subspace in $\mathbb{R}^n$.
+\end{enumerate}
+
+\end{document}
