@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1753943763.52941 "c:/Users/apple/Documents/GitHub/zain7cb.github.io/MatrixAlgebraSU25HW/MatrixAlgebraHW3.tex" "MatrixAlgebraHW3.pdf" "MatrixAlgebraHW3" 1753943764.16256 0
+["pdflatex"] 1753944070.71364 "c:/Users/apple/Documents/GitHub/zain7cb.github.io/MatrixAlgebraSU25HW/MatrixAlgebraHW3.tex" "MatrixAlgebraHW3.pdf" "MatrixAlgebraHW3" 1753944071.37346 0
   "C:/Users/apple/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1753241486 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/apple/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1739167368 12017795 ee2e0ef682e787952d924f1d4ba74661 ""
   "C:/Users/apple/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -14,6 +14,7 @@
   "C:/Users/apple/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx7.tfm" 1136765053 1336 3125ccb448c1a09074e3aa4a9832f130 ""
   "C:/Users/apple/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmti10.tfm" 1136765053 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
   "C:/Users/apple/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1247596666 34811 78b52f49e893bcba91bd7581cdc144c0 ""
+  "C:/Users/apple/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1247596667 30251 6afa5cb1d0204815a708a080681d4674 ""
   "C:/Users/apple/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247596667 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "C:/Users/apple/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1247596667 36281 c355509802a035cadc5f15869451dcee ""
   "C:/Users/apple/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
@@ -168,10 +169,10 @@
   "C:/Users/apple/AppData/Local/Programs/MiKTeX/tex/latex/trimspaces/trimspaces.sty" 1253169183 1380 971a51b00a14503ddf754cab24c3f209 ""
   "C:/Users/apple/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/apple/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "MatrixAlgebraHW3.aux" 1753943764 280 6b828094e00234c0864beebb1893eb25 "pdflatex"
-  "MatrixAlgebraHW3.out" 1753943764 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "MatrixAlgebraHW3.tex" 1753943763 4605 8ae9efc1db8a83f060d814142e30026d ""
-  "c:/Users/apple/Documents/GitHub/zain7cb.github.io/MatrixAlgebraSU25HW/MatrixAlgebraHW3.tex" 1753943763 4605 8ae9efc1db8a83f060d814142e30026d ""
+  "MatrixAlgebraHW3.aux" 1753944071 280 6b828094e00234c0864beebb1893eb25 "pdflatex"
+  "MatrixAlgebraHW3.out" 1753944071 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "MatrixAlgebraHW3.tex" 1753944070 4877 098fa6f8557567a736cc85997909d12a ""
+  "c:/Users/apple/Documents/GitHub/zain7cb.github.io/MatrixAlgebraSU25HW/MatrixAlgebraHW3.tex" 1753944070 4877 098fa6f8557567a736cc85997909d12a ""
   (generated)
   "MatrixAlgebraHW3.aux"
   "MatrixAlgebraHW3.log"
