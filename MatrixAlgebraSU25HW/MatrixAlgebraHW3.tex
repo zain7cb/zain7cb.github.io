@@ -60,32 +60,40 @@
 \textbf{HW3}
 All of the following exercises are from LADW.
 
-\textbf{6.1.} True or false (explain your answers):
+\textbf{Exercise 5.4.} (An old problem revisited: now this problem should be easier) Is it possible that vectors $\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3$ are linearly dependent, but the vectors $\mathbf{w}_1 = \mathbf{v}_1 + \mathbf{v}_2$, $\mathbf{w}_2 = \mathbf{v}_2 + \mathbf{v}_3$ and $\mathbf{w}_3 = \mathbf{v}_3 + \mathbf{v}_1$ are linearly \textit{independent}? \textbf{Hint:} What dimension can the subspace $\text{span}(\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3)$ have?
+    
+\textbf{Exercise 5.5.} Let vectors $\mathbf{u}, \mathbf{v}, \mathbf{w}$ be a basis in $V$. Show that $\mathbf{u} + \mathbf{v} + \mathbf{w}$, $\mathbf{v} + \mathbf{w}$, $\mathbf{w}$ is also a basis in $V$. \textbf{Hint:} You can form a matrix whose columns are coordinate vectors with respect to the basis $\{\mathbf{u}, \mathbf{v}, \mathbf{w}\}$.
+    
 
-\begin{enumerate}
-    \item[a)] Any system of linear equations has at least one solution;
-    \item[b)] Any system of linear equations has at most one solution;
-    \item[c)] Any homogeneous system of linear equations has at least one solution;
-    \item[d)] Any system of $n$ linear equations in $n$ unknowns has at least one solution;
-    \item[e)] Any system of $n$ linear equations in $n$ unknowns has at most one solution;
-    \item[f)] If the homogeneous system corresponding to a given system of a linear equations has a solution, then the given system has a solution;
-    \item[g)] If the coefficient matrix of a homogeneous system of $n$ linear equations in $n$ unknowns is invertible, then the system has no non-zero solution;
-    \item[h)] The solution set of any system of $m$ equations in $n$ unknowns is a subspace in $\mathbb{R}^n$;
-    \item[i)] The solution set of any homogeneous system of $m$ equations in $n$ unknowns is a subspace in $\mathbb{R}^n$.
+
+\textbf{Exercise 6.1.} True or false (explain your answers):
+
+\begin{enumerate}[(a)]
+    \item Any homogeneous system of linear equations has at least one solution;
+    \item Any system of $n$ linear equations in $n$ unknowns has at least one solution;
+    \item The solution set of any system of $m$ equations in $n$ unknowns is a subspace in $\mathbb{R}^n$;
+    \item The solution set of any homogeneous system of $m$ equations in $n$ unknowns is a subspace in $\mathbb{R}^n$.
 \end{enumerate}
 
-\textbf{7.1.} True or false (explain your answers):
+\textbf{Exercise 7.1.} True or false (explain your answers):
 
-\begin{enumerate}
-    \item[a)] The rank of a matrix is equal to the number of its non-zero columns;
-    \item[b)] The $m \times n$ zero matrix is the only $m \times n$ matrix having rank 0;
-    \item[c)] Elementary row operations preserve rank;
-    \item[d)] Elementary column operations do not necessarily preserve rank;
-    \item[e)] The rank of a matrix is equal to the maximum number of linearly independent columns in the matrix;
-    \item[f)] The rank of a matrix is equal to the maximum number of linearly independent rows in the matrix;
-    \item[g)] The rank of an $n \times n$ matrix is at most $n$;
-    \item[h)] An $n \times n$ matrix having rank $n$ is invertible.
+\begin{enumerate}[(a)]
+    \item The $m \times n$ zero matrix is the only $m \times n$ matrix having rank 0 (think about row equivalence and echelon form);
+    \item Elementary row operations preserve rank;
+    \item The rank of a matrix is equal to the maximum number of linearly independent columns one can find in the matrix;
+    \item The rank of an $n \times n$ matrix is at most $n$;
+    \item An $n \times n$ matrix having rank $n$ is invertible.
 \end{enumerate}
+
+\textbf{Exercise 7.4.} Prove that if $A : X \to Y$ and $V$ is a subspace of $X$ then $\dim AV \le \text{rank } A$. ($AV$ here means the subspace $V$ transformed by the transformation $A$, i.e. any vector in $AV$ can be represented as $A\mathbf{v}$, $\mathbf{v} \in V$). Deduce from here that $\text{rank}(AB) \le \text{rank } A$, where $B$ is another linear map. \textbf{Hint:} Use the fact that the dimension of a subspace is no greater than the dimension of the space it is contained in.
+
+\textbf{Exercise 7.5.} Prove that if $A : X \to Y$ and $V$ is a subspace of $X$ then $\dim AV \le \dim V$. Deduce from here that $\text{rank}(AB) \le \dim B$, where $B$ is another linear map.
+
+\textbf{Exercise 7.6} Prove that if the product $AB$ of two $n \times n$ matrices is invertible, then both $A$ and $B$ are invertible. Avoid using determinants. \textbf{Hint:} Use the previous two problems.
+
+\textbf{Exercise 7.15} Complete the vectors $(1,2,-1,2,3)^T$, $(2,2,1,5,5)^T$, $(-1,-4,4,7,-11)^T$ to a basis in $\mathbb{R}^5$.
+
+
 
 
 \end{document}
