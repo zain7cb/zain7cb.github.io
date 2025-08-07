@@ -1,0 +1,72 @@
+\documentclass{article}
+
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{thmtools}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{framed}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{physics}
+\usepackage[shortlabels]{enumitem}
+
+\DeclareMathOperator{\grd}{grad}
+\DeclareMathOperator{\crl}{curl}
+\DeclareMathOperator{\dvr}{div}
+\DeclareMathOperator{\length}{length}
+\DeclareMathOperator{\vspan}{span}
+\DeclareMathOperator{\rng}{range}
+\DeclareMathOperator{\nul}{null}
+\colorlet{LightGray}{White!90!Periwinkle}
+\colorlet{LightOrange}{Orange!15}
+\colorlet{LightGreen}{Green!15}
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+
+\declaretheoremstyle[name=Theorem,]{thmsty}
+\declaretheorem[style=thmsty,numberwithin=section]{theorem}
+\tcolorboxenvironment{theorem}{colback=LightGray}
+
+\declaretheoremstyle[name=Proposition,]{prosty}
+\declaretheorem[style=prosty,numberlike=theorem]{proposition}
+\tcolorboxenvironment{proposition}{colback=LightOrange}
+
+\declaretheoremstyle[name=Principle,]{prcpsty}
+\declaretheorem[style=prcpsty,numberlike=theorem]{principle}
+\tcolorboxenvironment{principle}{colback=LightGreen}
+
+\setstretch{1.2}
+\geometry{
+    textheight=9in,
+    textwidth=6in,
+    top=0.5in,
+    headheight=12pt,
+    headsep=25pt,
+    footskip=30pt
+}
+
+% ------------------------------------------------------------------------------
+
+\begin{document}
+
+
+% ------------------------'
+
+\textbf{Final Exam}
+
+\textbf{Excercise 1.} Find the change of coordinates matrix from the basis $1$, $1+t$ to the basis $1-t$, $2t$ in $\mathbb{P}_1$.
+
+\textbf{Excercise 2.} Let $Perm(n)$ be the set of permutations of $\{1,2,\ldots,n\}$. Let $\tau \in Perm(n)$. Show that the map from $Perm(n)$ to $Perm(n)$ defined by $\sigma \mapsto \sigma \tau$ is a bijection (one-to-one and onto). In other words, composition with a fixed permutation $\tau$ takes the list of all permutations and rearranges it, but does not duplicate or remove any (it permutes the permutations).
+
+\textbf{Excercise 3.} Show that the determinant of a matrix is the product of its eigenvalues (counting multiplicities). 
+\textbf{Hint:} First show that the characteristic polynomial $\det(A-\lambda I) = (\lambda_1 - \lambda)(\lambda_2 - \lambda)\cdots(\lambda_n - \lambda)$ (note the $\lambda_i$'s occur before $\lambda$), where $\lambda_1, \ldots, \lambda_n$ are the eigenvalues of $A$ (with multiplicity). Then plug in $\lambda = 0$. Note that in general, a polynomial of degree $n$ can be written as $p(\lambda) = c(\lambda - r_1)(\lambda - r_2)\cdots(\lambda - r_n)$ (note the $\lambda$ comes before each $\lambda_i$), so the first step is to show that this $c$ is $(-1)^n$. If you use the permutation definition of the determinant, there is exactly one term that is of degree $n$ in $\lambda$, and it comes from the identity permutation.
+
+\textbf{Excercise 4.} Suppose the entries of $A$ and $A^{-1}$ are integers. What are the possible values of $\det(A)$? \textbf{Hint:} Use the fact that $\det(A) \cdot \det(A^{-1}) = 1$.
+
+
+\end{document}
