@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.2)  7 AUG 2025 00:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.2)  7 AUG 2025 23:29
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -515,63 +515,106 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@inbox=\box71
 \enit@count@id=\count306
 \enitdp@description=\count307
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/exercise/exercise.sty
+Package: exercise 2014/10/20 v1.6 Exercise package (P.Pichaureau)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+\ExerciseSkipBefore=\skip59
+\ExerciseSkipAfter=\skip60
+\AnswerSkipBefore=\skip61
+\AnswerSkipAfter=\skip62
+\Exesep=\skip63
+\Exetopsep=\skip64
+\Exeparsep=\skip65
+\Exepartopsep=\skip66
+\Exeleftmargin=\skip67
+\Exerightmargin=\skip68
+\Exelabelwidth=\skip69
+\Exelabelsep=\skip70
+\ExerciseBefore=\skip71
+\QuestionBefore=\skip72
+\subQuestionBefore=\skip73
+\subsubQuestionBefore=\skip74
+\QuestionIndent=\skip75
+\subQuestionIndent=\skip76
+\subsubQuestionIndent=\skip77
+\c@Exercise=\count308
+\c@Answer=\count309
+\c@ExePart=\count310
+\c@Question=\count311
+\c@subQuestion=\count312
+\c@subsubQuestion=\count313
+\c@savedQuestion=\count314
+\c@savedsubQuestion=\count315
+\c@savedsubsubQuestion=\count316
+\@QuestionLevel=\count317
+\@Exercisebox=\box72
+\all@Exercisebox=\box73
+\temp@Exercisebox=\box74
+\all@Answerbox=\box75
+\temp@Answerbox=\box76
+\ExerciseDifficulty=\count318
+\QuestionDifficulty=\count319
+\subQuestionDifficulty=\count320
+\subsubQuestionDifficulty=\count321
+\ExePartDifficulty=\count322
+\@Answerbox=\box77
+\colonnesLevel=\count323
+\tempskipa=\skip78
+\tempskipb=\skip79
+\@savedmathindent=\skip80
 )
 Package thmtools Info: Key `name' (with value `Theorem')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmsty' on input line 31.
-\c@theorem=\count308
+(thmtools)             that uses `style=thmsty' on input line 32.
+\c@theorem=\count324
 Package thmtools Info: Key `name' (with value `Proposition')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=prosty' on input line 35.
+(thmtools)             that uses `style=prosty' on input line 36.
 Package thmtools Info: Key `name' (with value `Principle')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=prcpsty' on input line 39.
+(thmtools)             that uses `style=prcpsty' on input line 40.
  (./MatrixAlgebraFINAL.aux)
 \openout1 = `MatrixAlgebraFINAL.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
  (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count309
+\scratchcounter=\count325
 \scratchdimen=\dimen265
-\scratchbox=\box72
-\nofMPsegments=\count310
-\nofMParguments=\count311
+\scratchbox=\box78
+\nofMPsegments=\count326
+\nofMParguments=\count327
 \everyMPshowfont=\toks49
-\MPscratchCnt=\count312
+\MPscratchCnt=\count328
 \MPscratchDim=\dimen266
-\MPnumerator=\count313
-\makeMPintoPDFobject=\count314
+\MPnumerator=\count329
+\makeMPintoPDFobject=\count330
 \everyMPtoPDFconversion=\toks50
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
- (/usr/local/texlive/2023/texmf-dist/tex/latex/grfext/grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
@@ -609,37 +652,38 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 55.
+Package hyperref Info: Link coloring OFF on input line 56.
 (./MatrixAlgebraFINAL.out) (./MatrixAlgebraFINAL.out)
 \@outlinefile=\write4
 \openout4 = `MatrixAlgebraFINAL.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 62.
+Package hyperref Info: bookmark level for unknown exercise defaults to 0 on input line 64.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 64.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 64.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./MatrixAlgebraFINAL.aux)
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./MatrixAlgebraFINAL.aux)
 Package rerunfilecheck Info: File `MatrixAlgebraFINAL.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23005 strings out of 476025
- 427462 string characters out of 5790018
- 1858388 words of memory out of 5000000
- 43072 multiletter control sequences out of 15000+600000
- 514294 words of font info for 41 fonts, out of 8000000 for 9000
+ 23492 strings out of 476025
+ 435032 string characters out of 5790018
+ 1875388 words of memory out of 5000000
+ 43540 multiletter control sequences out of 15000+600000
+ 514947 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,5n,80p,849b,447s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on MatrixAlgebraFINAL.pdf (1 page, 90935 bytes).
+ 83i,8n,80p,849b,448s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on MatrixAlgebraFINAL.pdf (2 pages, 121479 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
- 2 named destinations out of 1000 (max. 500000)
+ 91 PDF objects out of 1000 (max. 8388607)
+ 64 compressed objects within 1 object stream
+ 16 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

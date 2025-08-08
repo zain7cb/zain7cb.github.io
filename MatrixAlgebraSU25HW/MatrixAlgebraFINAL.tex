@@ -14,6 +14,7 @@
 \usepackage{tcolorbox}
 \usepackage{physics}
 \usepackage[shortlabels]{enumitem}
+\usepackage{exercise}
 
 \DeclareMathOperator{\grd}{grad}
 \DeclareMathOperator{\crl}{curl}
@@ -57,16 +58,69 @@
 
 % ------------------------'
 
-\textbf{Final Exam}
+\textbf{Final Exam/Homework}
 
-\textbf{Excercise 1.} Find the change of coordinates matrix from the basis $1$, $1+t$ to the basis $1-t$, $2t$ in $\mathbb{P}_1$.
+\begin{Exercise}
+    Let $T : \mathbb{P}_n \to \mathbb{P}_n$ be the linear transformation defined by $T(p(t)) = 2p(t) + 3p'(t) - 4f''(t)$. Find the matrix of $T$ with respect to the basis $1, t, t^2, \ldots, t^n$ of $\mathbb{P}_n$. You can express the matrix by specifying what each $a_{i,j}$ is, where $a_{i,j}$ is the entry in the $i$-th row and $j$-th column of the matrix (or whatever is easiest to write, as long as you give a complete description).
+\end{Exercise}
 
-\textbf{Excercise 2.} Let $Perm(n)$ be the set of permutations of $\{1,2,\ldots,n\}$. Let $\tau \in Perm(n)$. Show that the map from $Perm(n)$ to $Perm(n)$ defined by $\sigma \mapsto \sigma \tau$ is a bijection (one-to-one and onto). In other words, composition with a fixed permutation $\tau$ takes the list of all permutations and rearranges it, but does not duplicate or remove any (it permutes the permutations).
+\begin{Exercise}
+    Find the change of coordinates matrix from the basis $1$, $1+t$ to the basis $1-t$, $2t$ in $\mathbb{P}_1$.
+\end{Exercise}
 
-\textbf{Excercise 3.} Show that the determinant of a matrix is the product of its eigenvalues (counting multiplicities). 
+\begin{Exercise} Let $Perm(n)$ be the set of permutations of $\{1,2,\ldots,n\}$. Let $\tau \in Perm(n)$. Show that the map from $Perm(n)$ to $Perm(n)$ defined by $\sigma \mapsto \sigma \tau$ is a bijection (one-to-one and onto). In other words, composition with a fixed permutation $\tau$ takes the list of all permutations and rearranges it, but does not duplicate or remove any (it permutes the permutations).
+\end{Exercise}
+
+\begin{Exercise}
+    Show that the determinant of a matrix is the product of its eigenvalues (counting multiplicities). 
 \textbf{Hint:} First show that the characteristic polynomial $\det(A-\lambda I) = (\lambda_1 - \lambda)(\lambda_2 - \lambda)\cdots(\lambda_n - \lambda)$ (note the $\lambda_i$'s occur before $\lambda$), where $\lambda_1, \ldots, \lambda_n$ are the eigenvalues of $A$ (with multiplicity). Then plug in $\lambda = 0$. Note that in general, a polynomial of degree $n$ can be written as $p(\lambda) = c(\lambda - r_1)(\lambda - r_2)\cdots(\lambda - r_n)$ (note the $\lambda$ comes before each $\lambda_i$), so the first step is to show that this $c$ is $(-1)^n$. If you use the permutation definition of the determinant, there is exactly one term that is of degree $n$ in $\lambda$, and it comes from the identity permutation.
+\end{Exercise}
 
-\textbf{Excercise 4.} Suppose the entries of $A$ and $A^{-1}$ are integers. What are the possible values of $\det(A)$? \textbf{Hint:} Use the fact that $\det(A) \cdot \det(A^{-1}) = 1$.
+\begin{Exercise}
+    Suppose the entries of $A$ and $A^{-1}$ are integers. What are the possible values of $\det(A)$? \textbf{Hint:} Use the fact that $\det(A) \cdot \det(A^{-1}) = 1$.
+\end{Exercise}
+
+\begin{Exercise}
+    A matrix $A$ is called \emph{nilpotent} if $A^k = 0$ for some positive integer $k$. Show that the determinant of a nilpotent matrix is $0$.
+\end{Exercise}
+
+\begin{Exercise}
+    How are the determinants of $A$ and $B$ related if 
+    \begin{enumerate} [(a)]
+        \item \[ A= \begin{pmatrix}
+            a_1 & a_2 & a_3 \\
+            b_1 & b_2 & b_3 \\
+            c_1 & c_2 & c_3
+        \end{pmatrix}, B = \begin{pmatrix}
+            2a_1 & 3a_2 & 5a_3 \\
+            2b_1 & 3b_2 & 5b_3 \\
+            2c_1 & 3c_2 & 5c_3
+        \end{pmatrix} \]
+        \item \[ A= \begin{pmatrix}
+            a_1 & a_2 & a_3 \\
+            b_1 & b_2 & b_3 \\
+            c_1 & c_2 & c_3
+        \end{pmatrix}, B = \begin{pmatrix}
+            3a_1 & 4a_2 + 5a_1 & 5a_3 \\
+            3b_1 & 4b_2 + 5b_1 & 5b_3 \\
+            3c_1 & 4c_2 + 5c_1 & 5c_3
+        \end{pmatrix} \]
+    \end{enumerate}
+\end{Exercise}
+
+\begin{Exercise}
+    Recall that the Fibonacci sequence is defined by $\varphi_0 = 0$, $\varphi_1 = 1$, and $\varphi_{n+2} = \varphi_{n+1} + \varphi_n$ for $n \geq 0$ (the first few terms are $0, 1, 1, 2, 3, 5, 8, 13, \ldots$). You will now find a formula for the $n$-th Fibonacci number.
+
+    \begin{enumerate}[(a)]
+        \item Find a $2 \times 2$ matrix $A$ such that $$\begin{pmatrix} \varphi_{n+2} \\ \varphi_{n+1} \end{pmatrix} = A \begin{pmatrix} \varphi_{n+1} \\ \varphi_{n} \end{pmatrix}.$$
+        \item Diagonalize $A$ and find a formula for $A^n$.
+        \item Noticing that $$\begin{pmatrix} \varphi_{n+1} \\ \varphi_{n} \end{pmatrix} = A^n \begin{pmatrix} \varphi_{1} \\ \varphi_{0} \end{pmatrix}= A^n \begin{pmatrix}
+    1 \\ 0
+        \end{pmatrix},$$ use your formula for $A^n$ to find a formula for $\varphi_n$.
+    \end{enumerate}
+
+\end{Exercise}
+
 
 
 \end{document}
