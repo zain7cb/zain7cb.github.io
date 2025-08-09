@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1754676037 "/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/MatrixAlgebraSU25HW/MatrixAlgebraFINAL.tex" "MatrixAlgebraFINAL.pdf" "MatrixAlgebraFINAL" 1754676038 0
-  "/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/MatrixAlgebraSU25HW/MatrixAlgebraFINAL.tex" 1754676037 6185 b5ff724d4738fb1238871cdaaaf580f9 ""
+["pdflatex"] 1754768385 "/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/MatrixAlgebraSU25HW/MatrixAlgebraFINAL.tex" "MatrixAlgebraFINAL.pdf" "MatrixAlgebraFINAL" 1754768386 0
+  "/Users/zainsiddiqui/Documents/GitHub/zain7cb.github.io/MatrixAlgebraSU25HW/MatrixAlgebraFINAL.tex" 1754768384 6466 6724a43185f27a005b5b0adadb1182dc ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -168,9 +168,9 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1709422615 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1709422560 7883453 425cf9cde56a6b73db0d3394ac3a0367 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "MatrixAlgebraFINAL.aux" 1754676038 1975 01561ecc8c61d0a355c40f9058bdd102 "pdflatex"
-  "MatrixAlgebraFINAL.out" 1754676038 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "MatrixAlgebraFINAL.tex" 1754676037 6185 b5ff724d4738fb1238871cdaaaf580f9 ""
+  "MatrixAlgebraFINAL.aux" 1754768386 1975 01561ecc8c61d0a355c40f9058bdd102 "pdflatex"
+  "MatrixAlgebraFINAL.out" 1754768386 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "MatrixAlgebraFINAL.tex" 1754768384 6466 6724a43185f27a005b5b0adadb1182dc ""
   (generated)
   "MatrixAlgebraFINAL.aux"
   "MatrixAlgebraFINAL.log"
